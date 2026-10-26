@@ -1,0 +1,54 @@
+id	query	expected	class	audience	needs
+H01	עוזב עבודה אחרי 6 שנים, מה קורה עם הפנסיה שצברתי?	israeli-pension-advisor	hit	consumer	skill
+H02	ילדתי לפני חודש ולא קיבלתי דמי לידה, למי פונים?	israeli-bituach-leumi	hit	consumer	skill
+H03	הייתי 45 יום במילואים, מה מגיע לי חוץ מהתשלום הרגיל?	israeli-miluim-manager	hit	consumer	skill
+H04	אני גרה לבד עם תינוק, אפשר הנחה בארנונה?	israeli-arnona-optimizer	hit	consumer	skill
+H05	אבא נפטר בלי צוואה, יש דירה ושני אחים. מה עושים?	israeli-wills-inheritance	hit	consumer	skill
+H06	אין ממד בבניין, לאן ללכת כשיש אזעקה?	israeli-shelter-guide	hit	consumer	skill
+H07	עולה חדש מצרפת, מה עושים בשבוע הראשון?	israeli-aliyah-navigator | making-aliyah-first-90-days	hit	consumer	skill					Both catalog descriptions directly cover an ordered week-one aliyah checklist.
+H08	בעל הבית רוצה להעלות שכר דירה באמצע החוזה, זה חוקי?	israeli-rental-agreements	hit	consumer	skill
+H09	איך מחפשים דירה להשכרה בת"א בלי תיווך?	israeli-apartment-hunting	hit	consumer	skill
+H10	צריך קורות חיים בעברית להייטק, יש פורמט מקובל בארץ?	israeli-cv-builder	hit	consumer	skill
+H11	מציעים לנו תמא 38 בבניין, על מה בעצם חותמים?	israeli-urban-renewal-owner-guide	hit	consumer	skill
+H12	קניתי מכונת כביסה שהתקלקלה והחנות מתעלמת. כמה עולה תביעה קטנה?	israeli-small-claims-court	hit	consumer	skill
+H13	פתחו לי תיק בהוצאה לפועל, מה קורה עכשיו?	israeli-hotzaa-lapoal-debtor	hit	consumer	skill
+H14	השתחררתי לפני חודש, מה הזכויות שלי?	israeli-discharged-soldier-navigator	hit	consumer	skill
+H15	אני חייל בודד, איזה סיוע מגיע לי בשכר דירה?	israeli-lone-soldier-rights	hit	consumer	skill
+H16	מתגרשים בהסכמה, יש ילד אחד. מאיפה מתחילים?	israeli-divorce-navigator	hit	consumer	skill
+H17	העסק שלי היה סגור שבועיים בגלל המצב, יש פיצוי?	israeli-business-war-compensation	hit	consumer	skill
+H18	צריך לסדר את כל הקבלות של השנה לקטגוריות לפני רואה החשבון	israeli-expense-categorizer	hit	consumer	skill
+H19	משפחה עם 2 ילדים, 22 אלף נטו. איך בונים תקציב סביר?	israeli-budget-planner	hit	consumer	skill
+H20	צריך להוציא חשבונית דרך ה-API של Green Invoice, איפה מתחילים?	green-invoice	hit	dev	skill
+N01	תסכם לי את המייל הזה	NONE	negative	consumer	none
+N02	תכתוב פונקציה שמחשבת מעמ 18%	NONE	negative	dev	none
+N03	מה השעה עכשיו בניו יורק?	NONE	negative	consumer	none
+N04	תתרגם את הפסקה הזאת לאנגלית	NONE	negative	consumer	none
+N05	יש לי טבלה בעברית באקסל, איך עושים VLOOKUP?	NONE	negative	dev	none
+N06	תכתוב לי הודעת יום הולדת לחבר	NONE	negative	consumer	none
+N07	מה זה REST API?	NONE	negative	dev	none
+N08	כמה קלוריות יש בבננה?	NONE	negative	consumer	none
+N09	יש לי באג ב-React, הקומפוננטה לא מתרנדרת	NONE	negative	dev	none
+N10	תמליץ לי על סרט טוב לשבת	NONE	negative	consumer	none
+M01	אין לי ממד, איך מכינים מקום מוגן בדירה?	israeli-shelter-guide	nearmiss	consumer	skill
+M02	מצאתי דירה, לפני שאני חותם על החוזה על מה להסתכל?	israeli-rental-agreements	nearmiss	consumer	skill
+M03	איפה מחפשים דירות בחיפה, יד2 או מדלן?	israeli-apartment-hunting	nearmiss	consumer	skill
+M04	החנות לא מחזירה כסף על מוצר פגום, 900 שקל	israeli-small-claims-court	nearmiss	consumer	skill
+M05	עיקרו לי את חשבון הבנק בגלל חוב לעירייה	israeli-hotzaa-lapoal-debtor	nearmiss	consumer	skill
+M06	רואה החשבון מבקש הנהלת חשבונות מסודרת, מה זה אומר בפועל?	israeli-bookkeeping-automation	nearmiss	consumer	skill
+M07	באזעקה אני במקלט ציבורי או בחדר מדרגות? מה עדיף	pikud-haoref-safety-protocols	nearmiss	consumer	skill
+C01	משתכר 19,500 ברוטו ומפריש 6% לפנסיה. כמה נכנס לקרן בחודש?	israeli-pension-advisor	compute	consumer	skill+script
+C02	38 ימי מילואים, שכר 15 אלף. כמה תגמול מגיע?	israeli-miluim-manager	compute	consumer	skill+ref
+C03	3 בעלי דירות מתוך 12 מסרבים לתמא. יש רוב לפרויקט?	israeli-urban-renewal-owner-guide	compute	consumer	skill+script
+C04	כמה זה 12,000 שקל בדולר לפי השער היציג?	shekel-currency-converter	compute	consumer	skill+script
+C05	נולד לנו ילד ראשון. מה גובה מענק הלידה?	israeli-bituach-leumi	compute	consumer	skill+script
+C06	משכנתה של 1.2 מיליון ל-25 שנה בריבית 5%. מה ההחזר החודשי?	israeli-budget-planner	compute	consumer	skill+script
+R01	עולה חדש - מה בדיוק בסל הקליטה ומתי כל תשלום נכנס?	israeli-aliyah-navigator	reference	consumer	skill+ref
+R02	אמא שלי בת 78 וצריכה סיעוד. אילו טפסים של ביטוח לאומי?	israeli-bituach-leumi	reference	consumer	skill+ref
+R03	מה המסלולים המדויקים של המילגה לחיילים משוחררים?	israeli-discharged-soldier-navigator	reference	consumer	skill+ref
+R04	תמא 38/2 מול פינוי בינוי - מה ההגנות שלי כבעל דירה בכל מסלול?	israeli-urban-renewal-owner-guide	reference	consumer	skill+ref
+X01	עולה חדש שפותח עסק עצמאי - מה צריך גם ברשות המס וגם במשרד הקליטה?	israeli-aliyah-navigator + israeli-company-lookup	crossrepo	consumer	skill
+X02	השתחררתי מהצבא ואני רוצה לשכור דירה ראשונה	israeli-discharged-soldier-navigator + israeli-apartment-hunting	crossrepo	consumer	skill
+X03	העסק נפגע במלחמה - גם פיצוי וגם איך מעדכנים מקדמות מס הכנסה	israeli-business-war-compensation + israeli-tax-returns	crossrepo	consumer	skill
+O01	מה חוקי ההגירה לקנדה לישראלים?	NONE	outofcatalog	consumer	none
+O02	איך רושמים חברה בדלאוור?	NONE	outofcatalog	dev	none
+O03	מה שיעור מס החברות בקפריסין?	NONE	outofcatalog	dev	none

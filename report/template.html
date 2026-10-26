@@ -1,0 +1,305 @@
+<title>Jev מול Claude בניתוב</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@800;900&family=Rubik:wght@500;700&family=IBM+Plex+Sans+Hebrew:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one short reading column; the time-to-skill bars are the one bold visual */
+:root {
+  --bg: #f4f6f9; --surface: #ffffff; --ink: #141820; --ink-2: #4a5160; --muted: #6f7686;
+  --line: #dde2ea; --soft: #eaeef4; --claude: #eb6834; --jev: #2a78d6; --ok: #2b7a3d;
+  --f-display: "Rubik", "IBM Plex Sans Hebrew", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans Hebrew", "Rubik", system-ui, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --plate: #F6CF1C; --il: #1D3F9E; --plate-ink: #111111; --f-plate: "Heebo", "Rubik", system-ui, sans-serif;
+  --s-1: 0.8125rem; --s0: 1rem; --s1: 1.125rem; --s2: 1.5rem; --s4: 2.75rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111318; --surface: #1a1d24; --ink: #eef0f4; --ink-2: #b9becb; --muted: #8d93a2;
+    --line: #2d323c; --soft: #232731; --claude: #d95926; --jev: #3987e5; --ok: #5cb870;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111318; --surface: #1a1d24; --ink: #eef0f4; --ink-2: #b9becb; --muted: #8d93a2;
+  --line: #2d323c; --soft: #232731; --claude: #d95926; --jev: #3987e5; --ok: #5cb870;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: var(--s0); line-height: 1.65; }
+html[lang="en"] .he, html[lang="he"] .en { display: none !important; }
+.wrap {
+  max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 28px 64px;
+}
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(1.9rem, 5.5vw, var(--s4)); font-weight: 700; }
+h2 { font-size: var(--s2); font-weight: 700; }
+h3 { font-size: var(--s1); font-weight: 500; }
+p { margin: 0; max-width: 66ch; }
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.eyebrow { font-size: var(--s-1); color: var(--muted); letter-spacing: 0.04em; font-weight: 500; }
+.langs { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--surface); }
+.langs button { font: inherit; font-size: var(--s-1); border: 0; background: transparent; color: var(--ink-2); padding: 5px 14px; cursor: pointer; }
+.langs button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+button:focus-visible { outline: 2px solid var(--jev); outline-offset: 2px; }
+header { display: flex; flex-direction: column; gap: 14px; }
+.lede { font-size: var(--s1); color: var(--ink-2); }
+.thesis { border-inline-start: 3px solid var(--jev); padding-inline-start: 14px; font-size: var(--s1); color: var(--ink); max-width: 62ch; }
+section { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.section-head { display: flex; flex-direction: column; gap: 6px; }
+.section-head p { color: var(--ink-2); }
+code, .slug { font-family: var(--f-mono); font-size: 0.86em; direction: ltr; unicode-bidi: isolate; }
+.num { font-variant-numeric: tabular-nums; unicode-bidi: isolate; }
+.who { display: inline-flex; align-items: center; gap: 7px; font-weight: 600; }
+.who::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--c); flex: none; }
+.who.claude { --c: var(--claude); } .who.jev { --c: var(--jev); }
+
+/* mekomIL plate (logo) and licence sticker, borrowed from the skill's own site */
+.brand { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.plate {
+  display: inline-flex; align-items: stretch; border: 2px solid var(--plate-ink); border-radius: 6px; overflow: hidden;
+  background: var(--plate); color: var(--plate-ink); line-height: 1; text-decoration: none; font-family: var(--f-plate);
+  vertical-align: middle; flex: none;
+}
+.plate .word { padding: 4px 10px 5px; font-weight: 900; font-size: 1.1rem; }
+.plate .strip { background: var(--il); color: #fff; font-weight: 800; font-size: 0.8rem; letter-spacing: 0.04em; padding: 0 6px; display: flex; align-items: center; }
+.plate:focus-visible { outline: 2px solid var(--jev); outline-offset: 2px; }
+.lede .plate .word { font-size: 0.95rem; padding: 2px 7px 3px; }
+.lede .plate .strip { font-size: 0.7rem; padding: 0 4px; }
+.sticker { width: 1.15em; height: 1.15em; vertical-align: -0.2em; flex: none; }
+.sticker .disc { fill: var(--plate); stroke: var(--plate-ink); }
+.sticker .ring { fill: none; stroke: var(--plate-ink); opacity: 0.5; }
+.sticker .il { fill: var(--il); }
+.stopnote { display: flex; gap: 10px; align-items: flex-start; }
+.stopnote .sticker { width: 1.4em; height: 1.4em; margin-top: 0.15em; }
+
+/* the two routes */
+.routes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 640px) { .routes { grid-template-columns: 1fr; } }
+.route { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.route h3 { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; }
+.route h3 small { font-family: var(--f-body); font-weight: 400; font-size: var(--s-1); color: var(--muted); }
+.steps { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.steps li { display: grid; grid-template-columns: 4.6rem minmax(0, 1fr); gap: 10px; align-items: baseline; font-size: var(--s-1); }
+.steps .by { font-weight: 600; font-size: 0.75rem; letter-spacing: 0.03em; padding: 1px 8px; border-radius: 999px; text-align: center; color: #fff; background: var(--c); }
+.steps .by.claude { --c: var(--claude); } .steps .by.jev { --c: var(--jev); }
+.steps .stop { color: var(--muted); }
+.route .foot { font-size: var(--s-1); color: var(--ink-2); border-top: 1px solid var(--line); padding-top: 10px; }
+
+/* time-to-skill bars */
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px; display: flex; flex-direction: column; gap: 16px; position: relative; }
+.tbar { display: flex; flex-direction: column; gap: 6px; }
+.tbar .label { display: flex; justify-content: space-between; gap: 10px; font-size: var(--s-1); color: var(--ink-2); flex-wrap: wrap; }
+.tbar .label strong { color: var(--ink); font-family: var(--f-display); font-size: var(--s1); font-weight: 500; }
+.track { display: flex; height: 30px; gap: 2px; direction: ltr; }
+.seg { height: 100%; background: var(--c); border-radius: 4px; display: flex; align-items: center; padding-inline: 8px; color: #fff; font-size: 0.75rem; font-weight: 600; white-space: nowrap; overflow: hidden; min-width: 0; cursor: default; }
+.seg.claude { --c: var(--claude); } .seg.jev { --c: var(--jev); }
+.axis { display: flex; justify-content: space-between; direction: ltr; font-size: 0.75rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 4px; }
+.tip { position: absolute; pointer-events: none; background: var(--ink); color: var(--bg); font-size: var(--s-1); padding: 6px 10px; border-radius: 6px; max-width: 260px; z-index: 5; }
+
+/* key numbers */
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 640px) { .stats { grid-template-columns: 1fr; } }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.stat .k { font-size: var(--s-1); color: var(--muted); font-weight: 500; }
+.stat .row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.stat .v { font-family: var(--f-display); font-size: var(--s1); font-weight: 500; }
+
+/* accuracy */
+.acc { display: flex; flex-direction: column; gap: 10px; }
+.arow { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr) 4.5rem; gap: 12px; align-items: center; font-size: var(--s-1); }
+.arow .t { height: 10px; background: var(--soft); border-radius: 4px; overflow: hidden; direction: ltr; }
+.arow .f { height: 100%; background: var(--c); border-radius: 4px; }
+.arow.claude { --c: var(--claude); } .arow.jev { --c: var(--jev); }
+.arow .n { text-align: end; color: var(--ink-2); }
+@media (max-width: 560px) { .arow { grid-template-columns: 1fr 3.8rem; } .arow .t { grid-column: 1 / -1; grid-row: 2; } }
+
+ul.points { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; }
+ul.points li { padding-inline-start: 18px; position: relative; color: var(--ink-2); max-width: 68ch; }
+ul.points li::before { content: ""; position: absolute; inset-inline-start: 0; top: 0.72em; width: 7px; height: 2px; background: var(--muted); }
+ul.points strong { color: var(--ink); font-weight: 600; }
+.note { background: var(--surface); border: 1px solid var(--line); border-inline-start: 4px solid var(--plate); border-radius: 10px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+.note h2 { font-size: var(--s1); display: flex; align-items: center; gap: 10px; }
+.note p { color: var(--ink-2); }
+.note strong { color: var(--ink); font-weight: 600; }
+footer { font-size: var(--s-1); color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+a { color: var(--jev); }
+</style>
+
+<div class="wrap">
+  <div class="topbar">
+    <div class="brand"><a class="plate" href="https://ilanvys.github.io/mekomil/" aria-label="mekomIL"><span class="word"><span class="he">מקומי</span><span class="en">mekom</span></span><span class="strip">IL</span></a><div class="eyebrow"><span class="he">🧪 ניסוי</span><span class="en">🧪 Experiment</span></div></div>
+    <div class="langs" role="group" aria-label="Language">
+      <button type="button" id="lang-he" data-lang="he">עברית</button>
+      <button type="button" id="lang-en" data-lang="en">English</button>
+    </div>
+  </div>
+
+  <header>
+    <h1><span class="he">מודל נכון לכל שלב: הסקיל נשלף פי <span class="num" data-k="speedup"></span> מהר יותר</span><span class="en">The right model for each step: the skill is fetched <span class="num" data-k="speedup"></span>× faster</span></h1>
+    <p class="thesis"><span class="he">התזה: משימה עם כמה שלבים לא צריכה לרוץ כולה על אותו מודל גדול. אם מפרקים אותה ונותנים כל שלב לסוג המודל שמתאים לו, אפשר לקצר מאוד את הזמן עד התשובה.</span><span class="en">The thesis: a task with several steps doesn't have to run entirely on one large model. Split it, give each step to the kind of model that fits it, and the time to the answer can drop a lot.</span></p>
+    <p class="lede"><span class="he">בדקתי את זה על <a class="plate" href="https://ilanvys.github.io/mekomil/" aria-label="מקומי IL"><span class="word"><span class="he">מקומי</span><span class="en">mekom</span></span><span class="strip">IL</span></a>, ה־skill שנותן ל־Claude גישה לקטלוג skills-il. לפני ש־Claude עונה על שאלה ישראלית, הוא צריך להחליט אם לטעון skill מקטלוג של 218, ואיזה. זה שלב של החלטה, לא של כתיבה, אז נתתי אותו ל־Jev, מודל החלטות קטן, ומדדתי כמה זמן לוקח עד שה־skill הנכון נשלף.</span><span class="en">I tested it on <a class="plate" href="https://ilanvys.github.io/mekomil/" aria-label="mekomIL"><span class="word"><span class="he">מקומי</span><span class="en">mekom</span></span><span class="strip">IL</span></a>, the skill that gives Claude access to the skills-il catalog. Before Claude answers an Israeli question, it has to decide whether to load a skill from a catalog of 218, and which one. That step is a decision, not writing, so I gave it to Jev, a small decision model, and measured how long it takes until the right skill is fetched.</span></p>
+  </header>
+
+  <section aria-labelledby="h-routes">
+    <div class="section-head">
+      <h2 id="h-routes"><span class="he">שני מסלולים</span><span class="en">Two routes</span></h2>
+      <p><span class="he">53 שאלות בעברית מסט הבדיקה של מקומי IL, כל אחת 3 פעמים בכל מסלול. Claude הוא Sonnet 5.5 במאמץ high, עם אותם כלים ואותו system prompt בשני המסלולים.</span><span class="en">53 Hebrew questions from mekomIL's test set, each run 3 times per route. Claude is Sonnet 5.5 at high effort, with the same tools and system prompt in both routes.</span></p>
+    </div>
+    <div class="routes">
+      <div class="route">
+        <h3><span class="he">מסלול 1: Claude לבד</span><span class="en">Route 1: Claude alone</span><small><span class="he">כמו היום</span><span class="en">as today</span></small></h3>
+        <ol class="steps">
+          <li><span class="by claude">Claude</span><span><span class="he">מחליט אם צריך skill, כחלק מהחשיבה שלו</span><span class="en">decides whether a skill is needed, as part of its reasoning</span></span></li>
+          <li><span class="by claude">Claude</span><span><span class="he">פותח את ה־skill של מקומי IL</span><span class="en">opens the mekomIL skill</span></span></li>
+          <li><span class="by claude">Claude</span><span><span class="he">קורא את אינדקס הקטגוריות</span><span class="en">reads the category index</span></span></li>
+          <li><span class="by claude">Claude</span><span><span class="he">קורא קטגוריה אחת או שתיים</span><span class="en">reads one or two categories</span></span></li>
+          <li><span class="by claude">Claude</span><span><span class="he">קורא ל־<code>get_skill</code></span><span class="en">calls <code>get_skill</code></span> <svg class="sticker" viewBox="0 0 64 64" aria-hidden="true"><circle class="disc" cx="32" cy="32" r="29.5" stroke-width="3"/><circle class="ring" cx="32" cy="32" r="24" stroke-width="2" stroke-dasharray="2 4.6"/><rect class="il" x="20" y="19" width="6" height="26"/><rect class="il" x="30" y="19" width="6" height="26"/><rect class="il" x="30" y="39" width="15" height="6"/></svg></span></li>
+        </ol>
+        <div class="foot"><span class="he">כ־<span class="num" data-k="r1rounds"></span> סבבים של חשיבה וקריאת כלים</span><span class="en">About <span class="num" data-k="r1rounds"></span> rounds of thinking and tool calls</span></div>
+      </div>
+      <div class="route">
+        <h3><span class="he">מסלול 2: Jev מחליט, Claude שולף</span><span class="en">Route 2: Jev decides, Claude fetches</span></h3>
+        <ol class="steps">
+          <li><span class="by jev">Jev</span><span><span class="he">צריך skill?</span><span class="en">Is a skill needed?</span></span></li>
+          <li><span class="by jev">Jev</span><span><span class="he">איזו קטגוריה? (שתיים, אם הוא לא בטוח)</span><span class="en">Which category? (two, if unsure)</span></span></li>
+          <li><span class="by jev">Jev</span><span><span class="he">איזה skill?</span><span class="en">Which skill?</span></span></li>
+          <li><span class="by claude">Claude</span><span><span class="he">מקבל את השם וקורא ל־<code>get_skill</code></span><span class="en">gets the name and calls <code>get_skill</code></span> <svg class="sticker" viewBox="0 0 64 64" aria-hidden="true"><circle class="disc" cx="32" cy="32" r="29.5" stroke-width="3"/><circle class="ring" cx="32" cy="32" r="24" stroke-width="2" stroke-dasharray="2 4.6"/><rect class="il" x="20" y="19" width="6" height="26"/><rect class="il" x="30" y="19" width="6" height="26"/><rect class="il" x="30" y="39" width="15" height="6"/></svg></span></li>
+        </ol>
+        <div class="foot"><span class="he">3 קריאות קצרות ל־Jev, וסבב אחד של Claude</span><span class="en">3 short Jev calls, then one Claude round</span></div>
+      </div>
+    </div>
+    <p class="stopnote"><svg class="sticker" viewBox="0 0 64 64" aria-hidden="true"><circle class="disc" cx="32" cy="32" r="29.5" stroke-width="3"/><circle class="ring" cx="32" cy="32" r="24" stroke-width="2" stroke-dasharray="2 4.6"/><rect class="il" x="20" y="19" width="6" height="26"/><rect class="il" x="30" y="19" width="6" height="26"/><rect class="il" x="30" y="39" width="15" height="6"/></svg><span><span class="he">השעון נעצר כש־Claude קורא ל־<code>get_skill</code>, או מתחיל לענות אם לא צריך skill. ה־skill עצמו נשלף באותו זמן בשני המסלולים, אז הוא לא נמדד.</span><span class="en">The clock stops when Claude calls <code>get_skill</code>, or starts answering when no skill is needed. Fetching the skill itself takes the same time in both routes, so it isn't measured.</span></span></p>
+  </section>
+
+  <section aria-labelledby="h-time">
+    <div class="section-head">
+      <h2 id="h-time"><span class="he">הזמן עד שה־skill נשלף</span><span class="en">Time until the skill is fetched</span></h2>
+      <p><span class="he">חציון, בשאלות שצריכות skill (<span class="num" data-k="nNeed"></span> ריצות בכל מסלול).</span><span class="en">Median, on questions that need a skill (<span class="num" data-k="nNeed"></span> runs per route).</span></p>
+    </div>
+    <div class="card" id="time-card">
+      <div class="tbar">
+        <div class="label"><span class="who claude"><span class="he">מסלול 1: Claude לבד</span><span class="en">Route 1: Claude alone</span></span><strong class="num" data-k="r1t"></strong></div>
+        <div class="track" id="track1"></div>
+      </div>
+      <div class="tbar">
+        <div class="label"><span><span class="who jev">Jev</span> + <span class="who claude">Claude</span></span><strong class="num" data-k="r2t"></strong></div>
+        <div class="track" id="track2"></div>
+      </div>
+      <div class="axis" id="axis"></div>
+      <div class="tip" id="tip" hidden></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="k"><span class="he">סבבים של Claude</span><span class="en">Claude rounds</span></div>
+        <div class="row"><span class="who claude"><span class="he">מסלול 1</span><span class="en">Route 1</span></span><span class="v num" data-k="r1rounds"></span></div>
+        <div class="row"><span class="who jev"><span class="he">מסלול 2</span><span class="en">Route 2</span></span><span class="v num" data-k="r2rounds"></span></div></div>
+      <div class="stat"><div class="k"><span class="he">עלות ההחלטה, ל־159 ריצות</span><span class="en">Decision cost, 159 runs</span></div>
+        <div class="row"><span class="who claude"><span class="he">מסלול 1</span><span class="en">Route 1</span></span><span class="v num" data-k="r1cost"></span></div>
+        <div class="row"><span class="who jev"><span class="he">מסלול 2</span><span class="en">Route 2</span></span><span class="v num" data-k="r2cost"></span></div></div>
+      <div class="stat"><div class="k"><span class="he">Claude ביצע את ההחלטה של Jev</span><span class="en">Claude followed Jev's decision</span></div>
+        <div class="row"><span class="who jev"><span class="he">מסלול 2</span><span class="en">Route 2</span></span><span class="v num" data-k="followed"></span></div></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-acc">
+    <div class="section-head">
+      <h2 id="h-acc"><span class="he">והאם נשלף ה־skill הנכון?</span><span class="en">And was it the right skill?</span></h2>
+      <p><span class="he">מהירות לא שווה הרבה אם ה־skill שגוי. בשאלות שצריכות skill, מסלול 2 שלף את ה־skill הנכון בתדירות דומה ל־Claude לבד.</span><span class="en">Speed is worth little if the skill is wrong. On questions that need a skill, route 2 fetched the right skill about as often as Claude alone.</span></p>
+    </div>
+    <div class="card acc" id="acc"></div>
+  </section>
+
+  <section aria-labelledby="h-mean">
+    <div class="section-head"><h2 id="h-mean"><span class="he">מה זה אומר</span><span class="en">What it means</span></h2></div>
+    <ul class="points">
+      <li><span class="he"><strong>החיסכון מגיע מהסבבים.</strong> Claude לבד עושה כ־4 סבבים של חשיבה וקריאת כלים כדי לנווט בקטלוג. Jev מקבל את ההחלטה הזאת בשלוש קריאות קצרות, ו־Claude צריך סבב אחד בלבד.</span><span class="en"><strong>The savings come from rounds.</strong> Alone, Claude takes about 4 rounds of thinking and tool calls to navigate the catalog. Jev makes that decision in three short calls, and Claude needs a single round.</span></li>
+      <li><span class="he"><strong>Claude מקבל את ההחלטה.</strong> בכל הריצות הוא שלף בדיוק את ה־skill ש־Jev בחר, בלי לבדוק שוב את הקטלוג.</span><span class="en"><strong>Claude accepts the decision.</strong> In every run it fetched exactly the skill Jev chose, without checking the catalog again.</span></li>
+      <li><span class="he"><strong>איפה זה עוזר ואיפה לא:</strong> מסלול 2 היה מהיר יותר בכל 40 השאלות שצריכות skill. אבל ב־9 מתוך 13 השאלות שלא צריכות skill הוא היה איטי יותר, כי שם Claude לבד עונה ישר בלי כלים, ו־Jev רק מוסיף זמן. פירוק לשלבים משתלם כשיש שלבים לחסוך.</span><span class="en"><strong>Where it helps and where it doesn't:</strong> route 2 was faster on all 40 questions that need a skill. But on 9 of the 13 questions that need no skill it was slower, because there Claude alone answers right away without tools and Jev only adds time. Splitting into steps pays off when there are steps to save.</span></li>
+      <li><span class="he"><strong>גבולות:</strong> נמדד רק שלב הניתוב, לא התשובה המלאה. 53 שאלות בלבד, ואותן שאלות שימשו לפיתוח שלבי הניתוב של Jev, אז את הדיוק כדאי לאשש על שאלות חדשות. הכלים של מקומי IL הם העתק מקומי של הקטלוג.</span><span class="en"><strong>Limits:</strong> only the routing step is measured, not the full answer. Just 53 questions, and the same questions were used to develop Jev's routing steps, so the accuracy should be confirmed on new questions. The mekomIL tools are a local copy of the catalog.</span></li>
+    </ul>
+  </section>
+
+  <aside class="note" aria-labelledby="h-note">
+    <h2 id="h-note"><span class="he">הערה: זה ניסוי, לא שינוי במקומי IL</span><span class="en">A note: this is an experiment, not a change to mekomIL</span></h2>
+    <p><span class="he"><strong>מקומי IL בנוי לשימוש יומיומי ושקוף.</strong> שואלים כרגיל, וכשיש skill מתאים הוא נטען בלי שצריך לחשוב על זה. כשאין, הוא לא מפריע. הוא לא נועד למהירות תגובה אלא לתשובה יסודית ונכונה, ולכן כמה שניות של חיפוש בקטלוג הן מחיר סביר תמורת תשובה מקומית ומדויקת. מקומי IL עובד עם עוזר ה־AI שהמשתמש כבר עובד איתו, Claude או ChatGPT, וגם העובדה שהעוזר שוקל בעצמו אם ואיזה skill לטעון היא חלק מהיסודיות הזאת. בניסוי השתמשתי ב־Claude, אבל אותו עיקרון נכון גם ל־ChatGPT.</span><span class="en"><strong>mekomIL is built for everyday, seamless use.</strong> You ask as usual, and when a skill fits it loads without you thinking about it. When none fits, it stays out of the way. It isn't optimized for response time but for a thorough, correct answer, so a few seconds of catalog lookup are a fair price for a local, accurate answer. mekomIL works with the AI assistant the user already uses, Claude or ChatGPT, and the assistant weighing for itself whether and which skill to load is part of that thoroughness. The experiment used Claude, but the same applies to ChatGPT.</span></p>
+    <p><span class="he"><strong>שינוי הארכיטקטורה כאן נועד להדגים נקודה אחת:</strong> שכשמפרקים משימה עם כמה שלבים ונותנים כל שלב לסוג המודל שמתאים לו, אפשר לקצר מאוד את הזמן עד התשובה. מקומי IL היה מקרה בדיקה נוח, כי יש לו שלב החלטה ברור וסט שאלות מתויג. השינוי לא משרת את מטרת הסקיל, ומקומי IL לא עובר לארכיטקטורה הזאת.</span><span class="en"><strong>The architecture change here exists to demonstrate one point:</strong> when you split a multi-step task and give each step to the kind of model that fits it, the time to the answer can drop a lot. mekomIL was a convenient test case because it has a clear decision step and a labeled question set. The change doesn't serve the skill's goal, and mekomIL is not moving to this architecture.</span></p>
+    <p><span class="he"><strong>פרטיות.</strong> אחד היתרונות של מקומי IL הוא ששרת ה־MCP שלו רק מגיש קבצים: הוא מקבל שם של קטגוריה או של skill, ואף פעם לא את השאלה של המשתמש. השאלה נשארת בשיחה עם העוזר, Claude או ChatGPT. ניתוב דרך Jev היה שולח כל שאלה של כל משתמש קודם כל לספק נוסף, וזה פוגע בפרטיות שהסקיל שומר עליה בכוונה.</span><span class="en"><strong>Privacy.</strong> One of mekomIL's strengths is that its MCP server only serves files: it receives a category or skill name, never the user's question. The question stays in the conversation with the assistant, Claude or ChatGPT. Routing through Jev would send every user's question to an additional provider first, which undoes the privacy the skill deliberately keeps.</span></p>
+  </aside>
+
+  <footer><span class="he">הניסוי נבנה על <a href="https://ilanvys.github.io/mekomil/">מקומי IL</a> (<a href="https://github.com/ilanvys/mekomil">GitHub</a>), ומשם גם שאלות הבדיקה. תיאורי ה־skills מ־<a href="https://github.com/skills-il">skills-il</a> (MIT). הקוד: <code>run_e2e.py</code>, <code>report/build.py</code>. מחירים לפי מחירון ולא לפי חשבון בפועל.</span><span class="en">Built on <a href="https://ilanvys.github.io/mekomil/">mekomIL</a> (<a href="https://github.com/ilanvys/mekomil">GitHub</a>), which also provides the test questions. Skill descriptions from <a href="https://github.com/skills-il">skills-il</a> (MIT). Code: <code>run_e2e.py</code>, <code>report/build.py</code>. Costs use list prices, not an actual bill.</span></footer>
+</div>
+
+<script>
+const S = __DATA__;
+
+const $ = (id) => document.getElementById(id);
+let lang = 'he';
+const T = (he, en) => (lang === 'he' ? he : en);
+const sec = (ms) => (ms / 1000).toFixed(1) + T(' שנ׳', 's');
+const pct = (a, b) => Math.round((100 * a) / b) + '%';
+
+function fill() {
+  const v = {
+    speedup: (S.r1.need_med / S.r2.need_med).toFixed(1),
+    r1rounds: S.r1.rounds.toFixed(1), r2rounds: S.r2.rounds.toFixed(1),
+    r1t: sec(S.r1.need_med), r2t: sec(S.r2.need_med),
+    r1cost: '$' + S.r1.cost.toFixed(2), r2cost: '$' + S.r2.cost.toFixed(2),
+    followed: `${S.r2.followed}/${S.r2.n}`, nNeed: S.r1.n_need,
+    noneR1: sec(S.r1.none_med), noneR2: sec(S.r2.none_med),
+  };
+  document.querySelectorAll('[data-k]').forEach((el) => { el.textContent = v[el.dataset.k]; });
+
+  // time bars, one scale for both
+  const max = Math.ceil(S.r1.need_med / 1000) * 1000;
+  const w = (ms) => (100 * ms) / max + '%';
+  const seg = (cls, ms, label, tip) =>
+    `<div class="seg ${cls}" style="width:${w(ms)}" data-tip="${tip}">${label}</div>`;
+  $('track1').innerHTML = seg('claude', S.r1.need_med, `Claude · ${sec(S.r1.need_med)}`,
+    T(`Claude לבד: כ־${S.r1.rounds.toFixed(1)} סבבים`, `Claude alone: about ${S.r1.rounds.toFixed(1)} rounds`));
+  $('track2').innerHTML =
+    seg('jev', S.r2.jev_med, `Jev ${sec(S.r2.jev_med)}`, T(`Jev, 3 קריאות: ${sec(S.r2.jev_med)}`, `Jev, 3 calls: ${sec(S.r2.jev_med)}`)) +
+    seg('claude', S.r2.claude_med, `Claude ${sec(S.r2.claude_med)}`, T(`Claude, סבב אחד: ${sec(S.r2.claude_med)}`, `Claude, one round: ${sec(S.r2.claude_med)}`));
+  let ticks = '';
+  for (let s = 0; s <= max / 1000; s++) ticks += `<span>${s}${s === max / 1000 ? T(' שנ׳', 's') : ''}</span>`;
+  $('axis').innerHTML = ticks;
+
+  // accuracy
+  const rows = [
+    ['claude', T('מסלול 1: Claude לבד', 'Route 1: Claude alone'), S.r1.correct_need],
+    ['jev', T('מסלול 2: Jev + Claude', 'Route 2: Jev + Claude'), S.r2.correct_need],
+  ];
+  $('acc').innerHTML =
+    `<div class="arow" style="color:var(--muted)"><span>${T('ה־skill הנכון נשלף, בשאלות שצריכות skill', 'Right skill fetched, on questions that need one')}</span></div>` +
+    rows.map(([c, name, [ok, n]]) =>
+      `<div class="arow ${c}" title="${ok}/${n}"><span>${name}</span><div class="t"><div class="f" style="width:${(100 * ok) / n}%"></div></div><span class="n num">${pct(ok, n)} <span style="color:var(--muted)">${ok}/${n}</span></span></div>`
+    ).join('');
+}
+
+function setLang(l) {
+  lang = l;
+  document.documentElement.lang = l;
+  document.documentElement.dir = l === 'he' ? 'rtl' : 'ltr';
+  document.title = l === 'he' ? 'Jev מול Claude בניתוב' : 'Jev vs Claude routing';
+  for (const b of document.querySelectorAll('.langs button')) b.setAttribute('aria-pressed', b.dataset.lang === l);
+  try { localStorage.setItem('lang', l); } catch (e) {}
+  fill();
+}
+document.querySelector('.langs').addEventListener('click', (e) => { const b = e.target.closest('button'); if (b) setLang(b.dataset.lang); });
+let saved = null;
+try { saved = localStorage.getItem('lang'); } catch (e) {}
+setLang(location.hash === '#en' ? 'en' : location.hash === '#he' ? 'he' : saved || 'he');
+
+const tip = $('tip'), card = $('time-card');
+card.addEventListener('pointerover', (e) => {
+  const s = e.target.closest('.seg'); if (!s) return;
+  tip.textContent = s.dataset.tip; tip.hidden = false;
+  const cb = card.getBoundingClientRect(), sb = s.getBoundingClientRect();
+  tip.style.left = Math.max(8, Math.min(sb.left - cb.left, cb.width - tip.offsetWidth - 8)) + 'px';
+  tip.style.top = (sb.top - cb.top - tip.offsetHeight - 6) + 'px';
+});
+card.addEventListener('pointerout', (e) => { if (e.target.closest('.seg')) tip.hidden = true; });
+</script>

@@ -1,0 +1,13 @@
+# API keys: never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Local environment
+.venv/
+__pycache__/
+*.py[cod]
+.vscode/
+

@@ -1,0 +1,1310 @@
+[
+  {
+    "slug": "ai-agents-for-everyone",
+    "category": "courses",
+    "flag": "-",
+    "description": "A 6-chapter non-technical course on AI agents for Israeli professionals and small business owners. Teaches the difference between a chatbot and an agent, how to set one up on Claude Projects / ChatGPT Projects / Gemini Gems without writing code, prompt patterns that actually work, and four worked Israeli use cases (accountant, lawyer, marketer, small business). No coding required."
+  },
+  {
+    "slug": "american-freelancer-israel-tax",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Not tax advice and not a filed return. Works out the US self-employment tax an American osek patur or osek murshe in Israel owes on top of Bituach Leumi, because there is no US-Israel totalization agreement and the foreign earned income exclusion does not reduce SE tax. Projects the yearly bill from net earnings, explains the quarterly estimated payment cycle, and lays out the structural options and their trade-offs without recommending one. Use when a US citizen or green card holder freelancing in Israel asks why they owe US tax despite paying Israeli tax, what SE tax is, whether the exclusion covers it, or how much to set aside. Produces a projection worksheet, never a filed return. Do NOT use for annual filing mechanics or FBAR, for classifying Israeli funds as PFICs, for Israeli-side bookkeeping or VAT, or for advice on whether to incorporate."
+  },
+  {
+    "slug": "boi-economic-data",
+    "category": "tax-and-finance",
+    "flag": "Si",
+    "description": "Fetch and analyze Bank of Israel (BOI) economic data: interest rates, CPI (madad hamchirim), exchange rates (sha'ar yatzig), and CBS statistics. Use when user asks about BOI interest rate, ribit Bank Israel, exchange rates, sha'ar yatzig, CPI index, madad, inflation data, or Israeli economic indicators. Foundation skill for Israeli financial analytics. Provides API access to the BOI SDMX API at edge.boi.gov.il and CBS data. Do NOT use for stock market data (use tase-stock-analysis instead) or for currency conversion (use shekel-currency-converter instead)."
+  },
+  {
+    "slug": "cardcom-payment-gateway",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Not tax or accounting advice. Integrate Cardcom payment processing and Israeli invoice generation into applications, covering Low Profile payments, tokenization, recurring billing, and automatic tax invoice/receipt creation per Israeli law. Use when user asks to accept payments via Cardcom, generate Israeli invoices with payments, set up \"slikat ashrai\" with hashbonit, handle recurring billing (hora'ot keva), or mentions \"Cardcom\", \"CardCom API\", \"Low Profile\", Israeli payment with invoicing, or needs combined payment plus document generation. Targets the REST API V11. Do NOT use for Tranzila integration (use tranzila-payment-gateway), general accounting, or non-payment queries."
+  },
+  {
+    "slug": "cloudinary-assets",
+    "category": "developer-tools",
+    "flag": "Sx",
+    "description": "Manage media assets through Cloudinary's REST API -- upload, transform, optimize, and deliver images and videos. Use when user asks about image upload, media optimization, image transformations, responsive images, video management, CDN delivery, or mentions Cloudinary specifically. Covers Upload API, Admin API, URL-based transformations, AI-powered effects (gen_remove, gen_replace, background removal), and delivery optimization. Israeli-founded (2012) with R&D in Petah Tikva; global HQ in San Jose, California. Do NOT use for non-Cloudinary media hosting or local image processing without cloud upload."
+  },
+  {
+    "slug": "dual-listed-arbitrage",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Detect price gaps between TASE and US listings of the same dual-listed company (NICE, Teva, Elbit, Tower, Palo Alto Networks, and about 30 registered pairs), converting via the Bank of Israel representative rate and flagging gaps above a threshold. Use when the user asks to compare a dual-listed stock's Tel Aviv vs NASDAQ/NYSE price, spot cross-listing arbitrage, or understand a premium/discount between exchanges. Provides per-pair gap %, trading-hours-overlap confidence, and currency-adjusted comparison. Do NOT use for single-market analysis (use tase-stock-analysis)."
+  },
+  {
+    "slug": "foreign-caregiver-payroll",
+    "category": "health-services",
+    "flag": "Sc",
+    "description": "Not a binding payroll calculation. Guides Israeli families through legally employing a foreign nursing caregiver (metapel siudi zar) at home and computes the real monthly cost. Use when a user asks how to hire a foreign caregiver, \"kama oleh metapel zar\", \"ma ha'sachar shel ovedet siudit\", needs to calculate caregiver salary, social provisions, havraa, vacation days, or wants to understand the permit and bureau process. Explains the Population and Immigration Authority permit, minimum wage, National Insurance, pension and severance, recuperation pay, annual leave, holidays by country of origin, and how the Bituach Leumi long-term-care benefit offsets the cost. Do NOT use for caregivers hired through a care company as the company's employees, for Israeli (non-foreign) caregivers, or for general elder-care service navigation (use israeli-elder-care-navigator for that)."
+  },
+  {
+    "slug": "github-actions-il",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "CI/CD workflow templates tailored for Israeli development teams, including Shabbat/holiday-aware deployment schedules (\"shabbat deploy freeze\", \"hakpaaat prisa\"), Hebrew Slack/Teams notifications, Israeli compliance checks (IS-5568 accessibility, Privacy Protection Authority), Monday.com issue sync, and reusable composite actions for Israeli startup stacks. Use when user asks to \"set up CI/CD for Israeli team\", \"add Shabbat deploy freeze\", \"configure Hebrew notifications in GitHub Actions\", \"hakpaat prisa beshabbat\", \"add IS-5568 check to pipeline\", \"Israeli compliance CI\", or \"create workflow for Vercel fra1\". Supports Israeli work week (Sunday-Thursday) scheduling and Hebrew locale awareness. Do NOT use for JFrog Artifactory pipelines (use jfrog-devops), general GitHub repository management, non-CI/CD GitHub Actions, or Jenkins/CircleCI/GitLab CI configurations."
+  },
+  {
+    "slug": "green-invoice",
+    "category": "accounting",
+    "flag": "Sx",
+    "description": "Not tax advice and not a filed return. Integrate Green Invoice (Morning) API for Israeli invoicing, receipts, client management, and payment processing. Use when user asks to create invoices via Green Invoice, generate hashbonit mas through Morning API, manage clients in Green Invoice, set up webhook automation for document creation, query documents or expenses, or mentions \"Green Invoice\", \"Morning\", \"hashbonit yeruka\", \"greeninvoice API\", Israeli cloud invoicing, or needs to create tax invoice-receipt (cheshbonit mas/kabala). Covers all 15 document types, 8 payment types, client CRUD, item catalog, and webhook integration. Do NOT use for SHAAM allocation numbers or Tax Authority e-invoice compliance (use israeli-e-invoice), Cardcom payment processing (use cardcom-payment-gateway), or Tranzila integration (use tranzila-payment-gateway)."
+  },
+  {
+    "slug": "grow-payment-gateway",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Integrate Grow by Meshulam payment gateway into Israeli applications -- covers payment pages (iframe/redirect/SDK), tokenization, recurring billing, payment links, refunds, invoices, webhooks, and 3DS authentication via the Grow Light API. Use when user asks to accept payments via Grow or Meshulam, set up \"slikat ashrai\" with Grow, create payment links (drishat tashlum), handle recurring charges (hora'ot keva) via Grow tokens, process refunds or Bit cancellations, integrate Grow webhooks, or mentions \"Grow\", \"Meshulam\", \"grow-il\", \"meshulam.co.il\", Grow payment page, or Grow API. Prevents costly integration mistakes by guiding correct FormData request format, server-side-only restrictions, and the mandatory approveTransaction step that many developers miss. Do NOT use for Cardcom integration (use cardcom-payment-gateway), Tranzila integration (use tranzila-payment-gateway), general payment orchestration across multiple gateways (use israeli-payment-orchestrator), or non-payment queries."
+  },
+  {
+    "slug": "gws-hebrew-email-automation",
+    "category": "communication",
+    "flag": "Sc",
+    "description": "Gmail automation for Israeli freelancers using the Google Workspace CLI (gws). Use when user asks to draft Hebrew client emails, send payment reminders in Shekels, triage inbox with Hebrew labels, set up Gmail filters for Israeli services, or save drafts for later send that respect Israeli business hours. Key capabilities include bilingual email drafting via gws gmail +send, payment reminder sequences with ILS amounts, Hebrew-aware inbox labeling, and draft-then-send workflows for Shabbat-aware delivery. Do NOT use for non-Gmail email providers, Microsoft Outlook automation, or CRM-level contact management."
+  },
+  {
+    "slug": "gws-israeli-business-sheets",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Google Sheets financial tracking and automation for Israeli freelancers and small businesses using the Google Workspace CLI (gws). Use when user asks to create income/expense sheets with Shekel formatting, track VAT (18%) calculations, generate tax-period summaries for accountants, backup spreadsheets as CSV, or auto-log payments. Do NOT use for direct bank API integrations, payroll processing, or filing taxes with the Israel Tax Authority."
+  },
+  {
+    "slug": "hashavshevet-data-tools",
+    "category": "accounting",
+    "flag": "-",
+    "description": "Import and export data between Hashavshevet accounting software and modern formats (JSON, CSV, Excel). Use when you need to extract journal entries, chart of accounts, trial balances, or customer/supplier lists from Hashavshevet, import bank transactions and invoices into Hashavshevet format, migrate data from Hashavshevet to cloud-based solutions (iCount, Rivhit, Invoice4U), or handle Hebrew encoding conversions (Windows-1255 to UTF-8). Supports Hashavshevet Gold, Hashavshevet 2000+, and newer versions. Validates data integrity during import/export operations. Do NOT use for real-time Hashavshevet API integrations, direct database modifications, or live bookkeeping within Hashavshevet."
+  },
+  {
+    "slug": "hebrew-chatbot-builder",
+    "category": "developer-tools",
+    "flag": "Sx",
+    "description": "Build conversational AI chatbots with native Hebrew support, including WhatsApp Business API integration, Telegram bot scaffolding, web chat widgets, Hebrew NLP patterns, and RTL chat UI components. Prevents common Hebrew chatbot mistakes like broken RTL alignment, incorrect gender inflections, and poor tokenization of prefixed prepositions that break intent detection. Use when user asks to \"build a Hebrew chatbot\", \"integrate WhatsApp bot in Hebrew\", \"binui bot b'ivrit\", or design conversation flows for Hebrew speakers. Covers intent detection for Hebrew morphology, entity extraction for Israeli data (NIS amounts, phone numbers, dates), and gender-aware responses. Do NOT use for non-Hebrew chatbots or general NLP pipelines without a Hebrew component."
+  },
+  {
+    "slug": "hebrew-content-writer",
+    "category": "localization",
+    "flag": "-",
+    "description": "Write and edit professional content in Hebrew including marketing copy, UX text, articles, emails, and social media posts. Use when user asks to write in Hebrew, \"ktov b'ivrit\", create Hebrew marketing content, edit Hebrew text, write Hebrew UX copy, or optimize Hebrew content for SEO. Covers grammar rules, register from formal to dugri, mixed Hebrew/English, gendered language, nikud and numerals, and Hebrew SEO best practices. Do NOT use for Hebrew NLP/ML tasks (use hebrew-nlp-toolkit) or translation (use a translation skill)."
+  },
+  {
+    "slug": "hebrew-document-generator",
+    "category": "localization",
+    "flag": "Sc",
+    "description": "Not legal advice. Generate Hebrew documents (PDF, DOCX/Word, PPTX) with correct RTL layout, mixed Hebrew-and-English bidi handling, and Hebrew typography. Use whenever the output is a Hebrew or mixed Hebrew/English Word document, Hebrew PDF, or Hebrew PowerPoint (\"Hebrew Word document\", \"מסמך Word בעברית\", \"create a .docx in Hebrew\"), or Israeli templates like Heshbonit Mas, Hozeh, or Protokol. ALSO use this for the symptom where a Hebrew document looks fine on screen or in Claude but comes out scrambled, reversed, or broken in Word, with English, numbers, or punctuation on the wrong side (\"Hebrew text reversed in Word\", \"fix Hebrew formatting in Word\"); the fix is regenerating the .docx with paragraph-level RTL/bidi, NOT a web/CSS RTL change. Prefer over the generic docx/pdf skills ONLY when the document is Hebrew or RTL; for English-only docs use the generic skill. Covers reportlab, WeasyPrint, python-docx, pptxgenjs. Do NOT use for OCR or reading existing documents (use hebrew-ocr-forms)."
+  },
+  {
+    "slug": "hebrew-i18n",
+    "category": "localization",
+    "flag": "Sc",
+    "description": "Implement comprehensive Hebrew internationalization (i18n) patterns for web and mobile applications. Use when user asks about Hebrew localization, \"beinle'umiyut\", i18n for Israeli apps, Hebrew plural forms, Hebrew date formatting, RTL CSS logical properties, bidirectional text handling, React/Vue/Angular/Next.js RTL integration, Tailwind CSS RTL, or next-intl setup. Covers Hebrew pluralization rules, date and number formatting for Israel, RTL-first CSS, Tailwind RTL utilities, and bidi text algorithms. Do NOT use for NLP or content writing (use hebrew-nlp-toolkit or hebrew-content-writer instead)."
+  },
+  {
+    "slug": "hebrew-legal-research",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Assist with Israeli legal research including legislation lookup, case law concepts, Hebrew legal terminology, and legal document preparation guidance. Use when user asks about Israeli law, \"chok\", \"mishpat\", \"bagatz\", court procedures, employment law, contract law, real estate law, or needs help with Hebrew legal terms. Covers civil, commercial, employment, and administrative law. Do NOT use for providing formal legal advice, always recommend consulting a licensed Israeli attorney (orech din). Do NOT use for non-Israeli legal systems."
+  },
+  {
+    "slug": "hebrew-llm-eval-suite",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Benchmark and compare LLMs on Hebrew reasoning, comprehension, sentiment, translation, and Israeli cultural knowledge. Wraps the HuggingFace Open Hebrew LLM Leaderboard tasks (HeQ reading comprehension, HebrewSentiment, Hebrew Winograd, NeuLabs-TedTalks translation) plus DictaLM 3.0 benchmark tasks (Summarization, Nikud diacritization, Israeli Trivia) into a reproducible evaluation harness. Runs evals against Claude, GPT, Gemini, AI21 Jamba, DictaLM, Llama, and local HuggingFace models. Produces comparison scorecards in JSON and markdown with per-task breakdowns. Use when choosing an LLM for a Hebrew product, answering procurement questions about Hebrew performance, validating a fine-tuned Hebrew model, or tracking Hebrew regressions after a model upgrade. Do NOT use for Arabic NLP evaluation, speech recognition benchmarking (use ivrit.ai leaderboard for ASR), or general English LLM benchmarks."
+  },
+  {
+    "slug": "hebrew-ml-datasets-navigator",
+    "category": "developer-tools",
+    "flag": "Si",
+    "description": "Navigate the fragmented landscape of Hebrew and Yiddish ML datasets and models. Covers ivrit.ai (20K+ hours of Hebrew audio, whisper-large-v3 ASR variants, Yiddish models), Dicta (DictaLM 3.0 LLM family, DictaBERT variants, HeQ reading comprehension), the Israeli National NLP Program / NNLP-IL (HebrewSentiment, HebNLI), AlephBERT, and Knesset Plenums. Helps researchers and ML engineers pick the right dataset for a task by use case, license (commercial vs research), Hebrew register coverage, and model-dataset pairing. Use when choosing training data for a Hebrew NLP or ASR project, verifying license compatibility for a commercial product, finding a baseline model for a Hebrew downstream task, or exploring Yiddish ML resources. Do NOT use for Arabic NLP datasets (a separate ecosystem), general HuggingFace dataset discovery (use HuggingFace Hub search), or Hebrew OCR dataset selection (use hebrew-ocr-forms)."
+  },
+  {
+    "slug": "hebrew-nlp-toolkit",
+    "category": "localization",
+    "flag": "Sc",
+    "description": "Guide developers in using Hebrew NLP models and tools including DictaLM, DictaBERT, AlephBERT, and ivrit.ai. Use when user asks about Hebrew text processing, Hebrew NLP, \"ivrit\", Hebrew tokenization, Hebrew NER, Hebrew sentiment analysis, Hebrew speech-to-text, or needs to process Hebrew language text programmatically. Covers model selection, preprocessing, and Hebrew-specific NLP challenges. Do NOT use for Arabic NLP (different tools) or general English NLP tasks."
+  },
+  {
+    "slug": "hebrew-ocr-forms",
+    "category": "localization",
+    "flag": "Sc",
+    "description": "Process and extract data from scanned Israeli government forms using OCR. Supports Tabu (land registry), Tax Authority forms, Bituach Leumi documents, and other official Israeli paperwork. Use when user asks to OCR Hebrew documents, extract data from Israeli forms, \"lesarek tofes\", parse Tabu extract, read scanned tax form, or process Israeli government documents. Includes Hebrew OCR configuration, field extraction patterns, and RTL text handling. Do NOT use for handwritten Hebrew recognition (requires specialized models) or non-Israeli form processing."
+  },
+  {
+    "slug": "hebrew-podcast-postproduction",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Generate complete post-production packages for Hebrew podcasts including RTL show notes with chapter markers, timestamped clip extractions, and platform-specific social captions. Use when a Hebrew podcast episode needs show notes, Spotify/Apple chapter markers, shareable 30-90 second clips, FFmpeg extraction commands, or Hebrew social captions for Instagram Reels, TikTok, X, and LinkedIn from a transcript or audio file. Prevents stitching together 4-5 separate tools and avoids RTL, nikud, and Hebrew subtitle burn-in bugs that generic tools (Kapwing, Maestra, Descript) mishandle. Do NOT use for standalone audio transcription (use video-subtitles), podcast RSS feed generation, audio mixing/mastering, or English-only podcasts."
+  },
+  {
+    "slug": "hebrew-rtl-best-practices",
+    "category": "localization",
+    "flag": "-",
+    "description": "Implement right-to-left (RTL) layouts for Hebrew web applications. Use when user asks about RTL layout, Hebrew text direction, bidirectional (bidi) text, Hebrew CSS, \"right to left\", or needs to build a Hebrew web UI. Covers CSS logical properties, the :dir() pseudo-class, Tailwind RTL, React/Next.js RTL setup, icon mirroring, Hebrew typography, and font selection. Do NOT use for Arabic RTL (similar but different typography) unless user explicitly asks for shared RTL patterns, or for native mobile RTL (React Native I18nManager, SwiftUI, Android) which is out of scope."
+  },
+  {
+    "slug": "hebrew-seo-geo-toolkit",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Optimize websites for Hebrew SEO and GEO (Generative Engine Optimization) on Google.co.il and AI search engines (ChatGPT, Perplexity, Gemini, Copilot, Claude). Use when user asks about Hebrew keyword research, Israeli SEO, .co.il domain optimization, Hebrew schema.org markup, AI search visibility, GEO optimization, EEAT, or asks about \"kidum atarim\", \"milot mafteach\", \"SEO\", \"GEO\", or Israeli search ranking. Includes Hebrew morphological analysis, Princeton GEO methods, platform-specific AI optimization, EEAT principles, JSON-LD structured data, and Israeli business schema (Shabbat hours, kosher certification). Do NOT use for paid advertising campaigns or social media marketing."
+  },
+  {
+    "slug": "hebrew-survey-builder",
+    "category": "marketing-growth",
+    "flag": "Si",
+    "description": "Write Hebrew surveys (NPS, CSAT, CES, event feedback, product discovery, market research) with natural Israeli phrasing, and either deploy them as live Google Forms via the Google Workspace CLI (gws) or paste them into Typeform, SurveyMonkey, Tally, Microsoft Forms, or email/Slack. Also advises on Israeli-specific send timing (days, hours, chagim to avoid) and cadence. Use when the user asks to build a survey in Hebrew, run an NPS or CSAT for Israeli customers, collect event feedback, run user interviews in Hebrew, decide when to send a survey to Israeli audiences, or asks about \"סקר\", \"שאלון\", \"משוב\", \"NPS\", \"CSAT\", or survey cadence. Do NOT use for Israeli government forms (see israeli-gov-form-automator)."
+  },
+  {
+    "slug": "hebrew-tailwind-preset",
+    "category": "localization",
+    "flag": "-",
+    "description": "Configure Tailwind CSS v4 for Hebrew RTL applications with dir variants, Hebrew font stacks, and logical property utilities. Use when user asks about Tailwind RTL setup, Hebrew Tailwind config, \"Tailwind ivrit\" (Hebrew Tailwind), RTL utility classes, logical properties in Tailwind, ms-/me- utilities, or Tailwind Hebrew font configuration. Covers Tailwind v4 dir variants, Hebrew font stack presets, logical property utilities (ms-/me-/ps-/pe- instead of ml-/mr-/pl-/pr-), RTL-first component patterns, and Hebrew typography tokens. Do NOT use for general CSS RTL patterns (use hebrew-rtl-best-practices) or full design systems (use israeli-ui-design-system instead)."
+  },
+  {
+    "slug": "hebrew-voice-bot-builder",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Build Hebrew voice bots and IVR (Interactive Voice Response) systems with speech-to-text, text-to-speech, and telephony integration for Israeli businesses. Use when user asks to \"build a Hebrew voice bot\", \"create an IVR in Hebrew\", \"Hebrew speech-to-text\", \"binui bot koli b'ivrit\", \"maarechet maane koli\", \"zihui dibur b'ivrit\", or \"Twilio Israel\". Covers OpenAI Whisper Hebrew, Google Cloud STT/TTS he-IL, Azure Speech Services, IVR menu design for Sunday-Thursday business hours, voicemail transcription, Hebrew accent handling, and +972 phone integration via Twilio and Vonage. Do NOT use for text-based chatbots (use hebrew-chatbot-builder), Hebrew NLP without voice (use hebrew-nlp-toolkit), or SMS messaging (use israeli-sms-gateway)."
+  },
+  {
+    "slug": "hyperframes-best-practices",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Best practices for programmatic video creation using HyperFrames, plain HTML compositions with GSAP animations rendered to MP4, with full Hebrew and RTL support. Covers composition authoring, data-* timing attributes, GSAP timeline contract, layout-before-animation methodology, visual identity gate, Hebrew fonts via Google Fonts (Heebo, Rubik, Assistant), RTL text rendering with dir=\"rtl\", Hebrew TikTok/Reels-style captions via Whisper, audio-reactive visuals, scene transitions, and bidirectional Hebrew+English text. Use when building HTML-based video content or Hebrew social/marketing videos without React. Do NOT use for Remotion or general React video work, use remotion-best-practices for that."
+  },
+  {
+    "slug": "idf-date-converter",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Convert between Hebrew (Jewish) calendar and Gregorian dates, look up Israeli holidays, format dual dates for Israeli documents, and calculate Israeli business days. Use when user asks about Hebrew dates, \"luach ivri\", Jewish calendar, Israeli holidays, \"chagim\", Shabbat times, or needs dual-date formatting for Israeli forms. Do NOT use for Islamic Hijri calendar or non-Israeli holiday calendars."
+  },
+  {
+    "slug": "il-invoice-organizer",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Parse and organize Hebrew invoices for Israeli bookkeeping: VAT 1/6 extraction, Tax Authority expense categories, Osek Murshe/Patur recognition, and accountant-ready export. Use when user asks about organizing invoices, cheshbonit, expense categorization, sivug hotza'ot, VAT extraction from totals, Osek Murshe vs Osek Patur rules, or preparing documents for their accountant (ro'eh cheshbon). Supports Hebrew OCR text parsing and automatic categorization per Tax Authority standards. Do NOT use for invoice generation (use israeli-e-invoice instead) or for VAT report filing (use israeli-vat-reporting instead)."
+  },
+  {
+    "slug": "israel-gov-api",
+    "category": "government-services",
+    "flag": "Si",
+    "description": "Discover, query, and analyze Israeli government open data from data.gov.il (CKAN API). Use when user asks about Israeli government data, \"data.gov.il\", government datasets, CBS statistics, or needs data about Israeli transportation, education, health, geography, economy, or environment. Supports dataset search, tabular data queries, and analysis guidance. Pair with the MCP servers listed below for direct tool access from your agent. Do NOT use for classified government data or data requiring security clearance."
+  },
+  {
+    "slug": "israeli-abroad-trip-planner",
+    "category": "travel",
+    "flag": "-",
+    "description": "Plans a full trip abroad for Israeli travelers: route, hotels and attractions, anchored by the Israel-specific layer of visa and electronic-authorization rules for an Israeli passport, official Israeli travel warnings, exit restrictions, passport validity and renewal, and travel health and insurance via the kupot. Use when an Israeli is planning or preparing a trip abroad and needs both the itinerary and the Israeli checks. Visa status and travel warnings are always checked live against official sources, never guessed. Do not use for domestic travel in Israel (israeli-travel-planner) or flight price comparison (israeli-flight-finder)."
+  },
+  {
+    "slug": "israeli-academic-scholarships",
+    "category": "education",
+    "flag": "Sc",
+    "description": "Not a determination of eligibility and not a submitted application. Match an Israeli higher-education student to scholarships they qualify for, ranked by deadline and grant size. Covers PEREACH, MoD periphery, Mimadim LiLimudim (graduated, NOT flat 100%), Pikadon, Student Authority for olim, MilGo (4-tier), Rashi, ISEF, university merit, Adams Fellowship for PhDs in exact/math/life sciences only, Rothschild postdoc, PBC/MALAG, the Iron Swords (חרבות ברזל) reservist framework via CHE + MoD, statutory tracks for bereaved families / wounded soldiers, and evacuee (מפונים) scholarships. Use when a student asks מלגה, פר\"ח, מלגת פריפריה, פיקדון, מלגת אדמס, מלגת רוטשילד, מלגת מילואים, חרבות ברזל, or how to fund tuition. Prevents missed deadlines, over-budgeting Mimadim, and humanities PhDs wasting an Adams application. Do NOT use for K-12, Bituach Leumi welfare (israeli-bituach-leumi), loans, MFA inbound-student scholarships, yeshiva stipends, or general post-army benefits (israeli-miluim-manager)."
+  },
+  {
+    "slug": "israeli-accessibility-compliance",
+    "category": "localization",
+    "flag": "Si",
+    "description": "Not an accessibility surveyor's opinion and not legal advice. Implement Israeli web accessibility compliance per IS 5568 standard, which is WCAG 2.0 AA plus Israeli national changes, for Hebrew RTL applications. Use when user asks about Israeli accessibility law, \"negishot\" (accessibility), IS 5568, \"teken negishot\" (accessibility standard), \"nachim\" (disabilities), Hebrew screen reader support, RTL ARIA patterns, or accessibility audit for Israeli websites. Covers mandatory legal requirements under the Equal Rights for Persons with Disabilities Act, who is exempt, enforcement and penalties, the accessibility coordinator role, Hebrew screen reader compatibility (NVDA, JAWS, VoiceOver), native mobile apps, and RTL-specific ARIA patterns. Do NOT use for general WCAG guidance without Israeli context (use standard a11y resources instead), or for building a self-hosted accessibility preferences widget (use wcag-accessibility-widget)."
+  },
+  {
+    "slug": "israeli-address-autocomplete",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Format, validate, and geocode Israeli addresses including postal code (mikud) lookup and CBS city code resolution. Use when user asks about Israeli addresses, \"ktovet\", postal codes, \"mikud\", city codes, or needs to format addresses for Israeli forms and systems. Supports Hebrew address formatting and Hebrew-English transliteration. Do NOT use for non-Israeli addresses."
+  },
+  {
+    "slug": "israeli-agritech-advisor",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Guide developers in integrating Israeli agritech tools and precision agriculture platforms including CropX (soil monitoring), Netafim GrowSphere (IoT irrigation), Taranis (crop intelligence), and the broader Israeli agritech ecosystem. Use when user asks about agritech APIs, precision agriculture, smart irrigation, \"hashkaya cham\", crop monitoring, pest detection, Israeli agriculture tech, or needs to build farm management software. Covers irrigation optimization, pest detection, climate data integration, and Israeli agricultural context. Do NOT use for general gardening advice or non-agricultural IoT projects."
+  },
+  {
+    "slug": "israeli-ai-compliance-kit",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Guide Israeli ML teams through the AI governance and compliance stack: Ministry of Innovation December 2023 AI policy principles, Privacy Protection Law (PPL) and Amendment 13 applied to ML training data, sector-specific rules (Bank of Israel Directive 364, Ministry of Health AMAR medical-device AI), and EU AI Act exposure for Israeli exporters. Generates model cards, data statements, and DPIA templates tailored to Israeli context. Use when preparing AI governance docs, answering an enterprise customer's AI risk review, classifying a system under the EU AI Act, or building an internal responsible-AI checklist. Prevents costly compliance gaps when shipping AI to regulated markets. Do NOT use for general PPL policy (use israeli-privacy-shield), web app security (use israeli-appsec-scanner), or SOC/threat triage (use israeli-cybersecurity-ops)."
+  },
+  {
+    "slug": "israeli-aliyah-customs-shipment-planner",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Plan the 3-shipment customs exemption for new olim (zchuyot olim): classify belongings as exempt or over-limit, flag the 3-TV / 3-computer / 5-phone / 25%-carpet / one-of-each-appliance caps, split inventory across shipment 1/2/3 within the 3-year window, and draft customs declarations. Use when user asks about olim shipping rights, teudat oleh customs benefits, meches olim, lift shipping plan, how many TVs can I bring, or how to split my aliyah shipment. Do NOT use for general aliyah absorption (sal klita, ulpan, Misrad HaKlita) - use israeli-aliyah-navigator instead."
+  },
+  {
+    "slug": "israeli-aliyah-navigator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Comprehensive guide for new immigrants (olim) to Israel covering the full aliyah journey from pre-arrival to settlement. Use when user asks about \"aliyah to Israel\", \"sal klita\", \"absorption basket\", \"misrad haklita\", \"klitat aliyah\", \"teudat oleh\", \"ulpan enrollment\", \"oleh chadash rights\", \"tax benefits for olim\", or \"driver's license conversion in Israel\". Covers Misrad HaKlita processes, sal klita tracking, Ulpan, housing, banking, Bituach Leumi, tax exemptions, license conversion, and professional recognition. Do NOT use for general Israeli bureaucracy unrelated to immigration (use israeli-gov-services instead) or tourist visa questions."
+  },
+  {
+    "slug": "israeli-amuta-compliance",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Not legal or accounting advice and not an audited financial statement. Prepares an Israeli amuta or public benefit company (chalatz) for its annual filing to the Registrar of Associations: builds the checklist for the four annual documents, works out which governance organs and which audit duty the turnover band triggers, fixes the correct annual fee tier and deadline, and produces a gap report naming what blocks the ishur nihul takin. Use when the user asks about amuta annual reports, ishur nihul takin, doch miluli, vaadat bikoret, the amuta annual fee, or Section 46 digital donation reporting to the Tax Authority. Do NOT use for incorporating a new amuta, drafting or amending a takanon, producing the audited financial statement itself, which is reserved to a licensed accountant, or for listed-company reporting to the TASE or MAYA, which israeli-annual-reports covers."
+  },
+  {
+    "slug": "israeli-annual-reports",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Not investment advice and not a recommendation to buy or sell. Navigate and analyze Israeli corporate annual reports (dochot titkuftiim), financial filings, and regulatory disclosures. Use when user asks about Israeli annual reports, MAYA filings, IFRS financial statements, doch titkufti, dochot kaspiyim, דוח תקופתי, דוח רבעוני, דיווח מיידי, תאגיד קטן, filing deadlines for periodic, quarterly or immediate reports, small-corporation reliefs, or Companies Law reporting requirements. Covers TASE filing types, Israeli GAAP to IFRS transition, Hebrew financial terminology, and key financial statement analysis. Do NOT use for the Registrar of Companies annual report (Companies Law Sec. 141), for annual income-tax returns (Forms 1301, 1214, 6111; use israeli-tax-returns), or for preparing your own business's financial statements (use israeli-financial-reports)."
+  },
+  {
+    "slug": "israeli-apartment-hunting",
+    "category": "localization",
+    "flag": "Sc",
+    "description": "Not legal advice. Comprehensive guide to finding rental apartments in Israel through Yad2, Madlan, Facebook groups, and real estate agents. Use when relocating to Israel, searching for a rental apartment, negotiating with landlords, or navigating broker fees and lease agreements. Covers 2026 market prices by city, Hebrew listing terminology, viewing checklists, required documents, Fair Rental Law tenant rights, and neighborhood evaluation criteria. Do NOT use for purchasing property or commercial real estate (use israeli-real-estate), or for drafting or reviewing a lease clause by clause (use israeli-rental-agreements)."
+  },
+  {
+    "slug": "israeli-appsec-scanner",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Security scanning guidance for Israeli web applications covering OWASP Top 10, Israeli Privacy Protection Authority (PPA) compliance, dependency vulnerability scanning, secrets detection, and secure coding patterns for Hebrew/RTL apps. Use when user asks to \"scan for vulnerabilities\", \"check security compliance\", \"audit Israeli app security\", \"bodek aviskhut\" (Hebrew transliteration), or needs help with PPA compliance, secrets detection, or Hebrew input sanitization. Provides actionable checklists, automated scanning scripts, and Israeli-specific security guidance. Do NOT use for network penetration testing, physical security audits, or non-application-layer security concerns."
+  },
+  {
+    "slug": "israeli-arnona-optimizer",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Calculate municipal property tax (arnona) for Israeli properties, check discount eligibility, and draft appeal letters to arnona committees. Use when a user needs to estimate arnona payments by municipality, zone, and property usage type, verify eligibility for discounts (olim, soldiers, elderly, disabled, low income, students, single parents), or prepare formal appeals with legal references. Covers all major Israeli municipalities including Tel Aviv, Jerusalem, Haifa, and Beer Sheva. Do NOT use for income tax (mas hachnasa), VAT (maam), or national insurance (bituach leumi) calculations, which fall under separate Israeli tax authorities."
+  },
+  {
+    "slug": "israeli-aso",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Optimize mobile app listings for Israeli users on Apple App Store and Google Play with Hebrew metadata, keywords, and screenshots. Use when user asks about Israeli app store optimization, Hebrew app listing, Hebrew keywords for app store, or localizing app metadata for Israel. Covers Hebrew keyword research, RTL screenshot design, and category-specific benchmarks."
+  },
+  {
+    "slug": "israeli-attendance-wage-checker",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Not legal advice. Audits an Israeli payslip and timesheet and itemises what is owed against what was paid. Checks the payslip carries the components the law requires, converts clock-in and clock- out spans into working hours, splits them into ordinary, overtime and weekly-rest hours, and applies the statutory premiums. Works even when the payslip is the only document, because missing components raise a presumption of an unlawful inclusive wage. Use when a user asks whether their payslip is correct, whether overtime or Shabbat was paid correctly, how to compute shaot nosafot, or what to do when the employer kept no hours record. It matters because the premium tiers reset daily rather than monthly and the premium base includes every supplement. Do NOT use for gross-to- net, tax or National Insurance deductions (use israeli-payroll-calculator), for severance, notice pay or annual leave, to draft a claim or an employment contract, or for teacher or foreign- caregiver payroll."
+  },
+  {
+    "slug": "israeli-bagrut-psychometric",
+    "category": "education",
+    "flag": "Sc",
+    "description": "Guide users through Israel's Bagrut matriculation exams and Psychometric entrance test (PET) system. Use when user asks about bagrut study units, psychometric scores, exam structure, university entrance requirements, sekher calculation, or study planning. Covers the Bagrut grading formula (70% exam + 30% magen), PET scoring (200-800), NITE registration, test dates, and strategies for maximizing combined admission scores (sekhem). Prevents confusion between the many overlapping terms and formulas in the Israeli higher-education admissions process. Do NOT use for university-specific admission thresholds, post-secondary academic advising, or non-Israeli education systems."
+  },
+  {
+    "slug": "israeli-bank-connector",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Analyze Israeli bank transactions, spending patterns, and financial data across Israeli banks and credit card companies. Use when user asks about bank transactions, spending analysis, \"cheshbon bank\", budget tracking, or needs to categorize Israeli banking data. Pairs with israeli-bank-mcp and il-bank-mcp servers (which wrap the israeli-bank-scrapers library) to add financial-analysis workflows. Supports Hapoalim, Leumi, Discount, Mercantile, Mizrahi-Tefahot, First International (FIBI), Otsar HaHayal, Pagi, Union, Yahav, Massad, OneZero, Behatsdaa, Beyahad Bishvilha, Visa Cal, Max, Isracard, and Amex. Do NOT use for payment initiation, money transfers, or investment advice."
+  },
+  {
+    "slug": "israeli-bank-reconciliation",
+    "category": "accounting",
+    "flag": "-",
+    "description": "Not accounting or tax advice. Automates bank reconciliation for Israeli banks and credit-card issuers (Leumi, Hapoalim, Discount, Mizrahi Tefahot, Beinleumi/FIBI, Otsar Hahayal, Mercantile, Massad, Yahav, OneZero, and the card issuers Isracard, Max, Visa Cal, Amex) using the israeli-bank-scrapers library. Matches scraped or imported transactions to invoices and receipts, detects discrepancies, and generates reconciliation reports with matched, unmatched, and suspicious entries. Handles shekel amounts, Hebrew merchant names, and Israeli date formats. Use when you need to reconcile bank statements against your accounting records, identify missing invoices, or prepare monthly closing reports for Israeli business accounts. Do NOT use for international bank accounts, cryptocurrency wallets, or investment portfolio reconciliation."
+  },
+  {
+    "slug": "israeli-bituach-leumi",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Navigate Israeli National Insurance (Bituach Leumi) benefits, eligibility, contributions, and claim forms (טפסים). Use when user asks about \"bituach leumi\", national insurance, retirement pension (kitzbat zikna), unemployment (dmei avtala), maternity leave (dmei leida), child allowance (kitzbat yeladim), disability (nechut), work injury, reserve duty (miluim), survivors pension, long-term care (siyud), income support (havtachat hachnasa), birth grant (ma'anak leida), savings-for-every-child, alimony (mezonot), personal-accident benefit (dmei te'una), vocational rehabilitation, burial and death grants, or NI contribution rates and who pays them (employee, self-employed, non-worker, early pensioner, household-help employer, unpaid leave / chalat). Includes form numbers (Form 900, 355, 480, 1500, 211, 7801, 2201, etc.) for filing each claim. Do NOT use for private insurance or health fund (kupat cholim) questions."
+  },
+  {
+    "slug": "israeli-bookkeeping-automation",
+    "category": "accounting",
+    "flag": "-",
+    "description": "Generate proper double-entry journal entries (pkudat yoman) for common Israeli business transactions including payroll with all statutory components, VAT handling, asset depreciation, and revenue recognition. Use when you need to create accurate bookkeeping entries using an illustrative Israeli account-numbering convention that you map onto the business's own kartesset and its Form 6111 codes. Supports both Osek Murshe (authorized dealer) double-entry and Osek Patur (exempt dealer) single-entry bookkeeping. Handles salary payments with income tax, bituach leumi, health insurance, pension, keren hishtalmut, and convalescence pay. Do NOT use for tax filing submissions, annual financial statement audits, or replacing a certified public accountant (roeh heshbon)."
+  },
+  {
+    "slug": "israeli-budget-planner",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Not tax, pension or investment advice, and not a mortgage approval. Plan household and personal budgets with Israeli-specific costs, rates, and financial products. Use when user asks about budgeting in Israel, mortgage (mashkanta) calculations, arnona rates, cost of living, takciv, or monthly expense planning. Covers Bank of Israel prime rate, mashkanta tracks, arnona, household health costs (mas briut / health-tax), and Israeli household benchmarks."
+  },
+  {
+    "slug": "israeli-building-committee",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Helps residents of an Israeli bayit meshutaf run or deal with the vaad bayit (ועד בית): splits building costs by floor area, or by the registered takanon, drafts WhatsApp notices, meeting invitations, minutes, repair quote tables and budget summaries, writes escalating reminders for unpaid דמי ועד, and builds fact sheets for neighbour disputes like נזילה מהשכן or a roof takeover. Use when a resident asks how much each apartment pays, whether the ground floor pays for the elevator, how to collect unpaid fees, who fixes a leak, or what to do with no committee. Prevents the usual wrong answers (equal split, invented exemptions) that start fights and sink claims. Do NOT use for lease disputes with a landlord (israeli-rental-agreements), TAMA 38 or pinui binui (israeli-urban-renewal-owner-guide), new-apartment contractor defects (israeli-home-defect-report), or filing a small claim (israeli-small-claims-court)."
+  },
+  {
+    "slug": "israeli-bureaucracy-decoder",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Decode confusing Israeli government letters, forms, and official documents into plain language. Use when you receive mail from the Tax Authority, Bituach Leumi, municipalities, Interior Ministry, Land Registry, courts, or any government body and need to understand what it says, what action is required, and by when. Covers assessment notices, benefit decisions, municipal levies, zoning notices, and court summons. Do NOT use for drafting legal appeals or providing binding legal advice."
+  },
+  {
+    "slug": "israeli-business-war-compensation",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Indirect-damage business compensation calculator and filing guide for Israeli businesses, NPOs, and daycare operators hit by war. Covers Shaagat HaAri (March-April 2026) and Iron Swords (Oct 2023+). Computes eligibility (turnover decline must EXCEED 25 percent), the eligible-expenses grant per section 38lo (fixed expenses PLUS the wage part, capped, then doubled - the parts are ADDED, not compared), the doubled small-business continuity table (turnover up to 300K), the northern 100 percent tracks, and the advance schedule. Surfaces the 5/10-day chalat rule and live filing windows (to 17.08.2026). Use when a business owner, NPO admin, or daycare operator asks about נזק עקיף, מענק השתתפות בשכר, חל\"ת, מבצע שאגת הארי, or filing with the Tax Authority. Do NOT use for direct property damage (israeli-war-damage-claims), employee-side dmei avtala (israeli-unemployment-benefits-navigator), or personal reservist comp (israeli-miluim-manager)."
+  },
+  {
+    "slug": "israeli-car-accident-claim",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Guides a driver through the aftermath of a car accident in Israel: what to do and document at the scene, which insurance to claim under (compulsory vs comprehensive vs third-party), how the no-fault bodily-injury rule (PLATD) differs from fault-based property damage, how to fill the הודעה על תאונה report, the urgent-payment right, the compensation heads, the two different limitation periods, and when Karnit applies. Use when a user says \"I had a car accident\", \"te'unat derachim\", \"the other driver hit me\", \"what do I do after a crash\", \"claim car damage from insurance\", or \"hit and run\". Produces a scene checklist and a claim plan. Do NOT use for vehicle registration, test, or insurance shopping (use israeli-vehicle-manager), serious injury litigation (needs a lawyer), or DUI / criminal defense."
+  },
+  {
+    "slug": "israeli-celiac-navigator",
+    "category": "health-services",
+    "flag": "-",
+    "description": "Not a medical diagnosis and not dietary treatment. Navigator for celiac (tzeliak) and gluten-free life in Israel, focused on children. Opens with the costliest mistake, going gluten-free BEFORE the blood test and biopsy, which obstructs diagnosis. Covers the IgA serology panel, the IgA-deficiency caveat and when a repeat biopsy is needed. Covers the education entitlement (substitutes in every activity, gluten-free food wherever food is sold, portions marked distinctly), gluten labelling, the right to a suitable medication alternative, municipal welfare funding, the Pesach trap where kosher-for-Passover is not gluten-free, and the IDF track (profile 97, unit exclusions, stipend). Also covers birthday parties and the packaged snack shelf, traps such as Bisli, beigele and Click, and why the pack marking decides. Use when celiac is suspected, arranging gan or school, buying party snacks or nearing enlistment. Do NOT use for IgE food allergy or anaphylaxis (use israeli-food-allergy-navigator) or meal planning."
+  },
+  {
+    "slug": "israeli-chatbot-analytics",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Analyze and optimize Hebrew chatbot performance with conversation flow analytics, Hebrew sentiment analysis, drop-off detection, user satisfaction scoring, A/B testing for response variants, and reporting dashboards. Use when user asks to \"analyze chatbot performance\", \"measure chatbot satisfaction\", \"track Hebrew bot metrics\", \"analitika shel tsatbot\" (Hebrew transliteration), or needs help with conversation analytics, intent accuracy tracking, or chatbot reporting. Supports Dialogflow, Rasa, and custom bot platforms. Do NOT use for building chatbots (use hebrew-chatbot-builder), Hebrew NLP model training (use hebrew-nlp-toolkit), customer support workflow setup (use israeli-customer-support-automator), or voice bot development (use hebrew-voice-bot-builder)."
+  },
+  {
+    "slug": "israeli-childcare-navigator",
+    "category": "education",
+    "flag": "-",
+    "description": "Navigate the Israeli childcare system from birth to age 12: daycare subsidies (ma'on yom), preschool registration (gan chova/trom-chova), Bituach Leumi child allowances, tza'haronim (after-school programs), and special education rights. Use when user asks about daycare, gan registration, child allowance, tza'haronim, special education committee (va'adat hashama), chinuch meyuchad, or any child-related benefit in Israel. Covers the full parent journey from infancy through elementary school. Do NOT use for Bituach Leumi contribution calculations or general NI benefits (use israeli-bituach-leumi), maternity leave (dmei leida), or Bagrut exams (use israeli-bagrut-psychometric)."
+  },
+  {
+    "slug": "israeli-citizenship-by-descent",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Help an Israeli check whether they can claim a European passport by descent or Nazi-era restitution and build the do-it-yourself application path from Israel. Use when someone says a parent, grandparent, or great-grandparent came from Europe and they want to know if a passport is realistic and how to file it without paying an agency. Covers the German and Austrian restitution routes, citizenship by descent for Italy, Poland, Romania, Hungary and smaller routes, which routes have closed, and the Israeli-side document pipeline (population-registry extract, apostille, certified translation). Explains why getting the route and the document chain right is what decides approval. Do NOT use for immigrating to Israel, work or relocation visas, wills and inheritance, or as a substitute for a licensed immigration lawyer on a complex or contested case."
+  },
+  {
+    "slug": "israeli-client-payment-chaser",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Chase unpaid invoices and manage debt collection for Israeli freelancers and businesses. Use when user asks about \"unpaid invoices Israel\", \"payment reminder\", \"invoice aging\", \"debt collection freelancer\", \"Michtav Drisha (pre-suit demand letter)\", \"demand letter Hebrew\", \"tvi'ot ktanot\", or \"גביית חובות\". Covers graduated WhatsApp/email reminder escalation, Hebrew demand letter generation, Small Claims Court eligibility assessment, and Shabbat/holiday-aware scheduling. Do NOT use for invoice generation (use israeli-e-invoice) or general accounting."
+  },
+  {
+    "slug": "israeli-cloud-cost-comparator",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Compare cloud hosting costs for Israeli startups and developers across AWS (il-central-1 Tel Aviv), Azure (Israel Central), GCP (me-west1 Tel Aviv), Oracle Cloud (il-jerusalem-1 Jerusalem), and Israeli providers like Kamatera. Use when the user needs to evaluate cloud pricing with Israel-specific considerations including data residency under Privacy Protection Law Amendment 13, latency from Tel Aviv, NIS billing options, startup credit programs (AWS Activate, Google for Startups, Microsoft Founders Hub, Israel Innovation Authority Telem program with subsidized Nvidia B200 GPUs), and FinOps cost optimization strategies. Do NOT use for comparing on-premise hosting, colocation services, or non-cloud SaaS pricing."
+  },
+  {
+    "slug": "israeli-company-lookup",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Look up Israeli company information and understand business entity types. Use when user asks about Israeli companies, \"chevra\", business registration, \"Rasham HaChevarot\", company numbers, entity types, or needs to register a business in Israel. Covers Ltd companies, partnerships, non-profits (amuta), cooperatives, and sole proprietors. Do NOT use for non-Israeli corporate registries or stock market analysis."
+  },
+  {
+    "slug": "israeli-company-valuation",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Builds an indicative valuation range for an Israeli private company using DCF, market multiples, and the asset approach, with a WACC build-up that uses a live Israeli risk-free rate, the current Israel country risk premium, and the company's own effective tax rate rather than a generic 23%. Use when someone asks what their company is worth, is buying or selling a private Israeli business, needs a valuation for a share transfer or a Section 104 reorganization, or wants to sanity-check a valuation someone else produced. A US-textbook valuation misses Israel's country risk premium, taxes a preferred-enterprise company at the statutory rate, and returns one point estimate instead of a range. Early-stage companies are in scope via round-based methods. Do NOT use for real estate appraisal, listed shares, a startup investment memo, salary versus dividend planning, employee option tax, or a signed valuation opinion for filing."
+  },
+  {
+    "slug": "israeli-consumer-claim-kit",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Drafts Israeli consumer demand letters, cancellation notices and complaints that the user signs and sends. Use when a technician, delivery or gas inspection was hours late or never came (chok hatechnaim), when cancelling a purchase made online, by phone, at the door, at a sales event or in a shop, or a subscription (bitul iska), including the 4-month right for seniors, olim and people with disabilities, when a warranty repair is refused or overdue, or when complaining to the Consumer Protection Authority or the Consumer Council. It works out the statutory figure first (300 or 600 NIS, the cancellation deadline, the fee cap) because guides often get these wrong. Do NOT use for filing the court claim itself (use israeli-small-claims-court), for seller-side compliance (use israeli-ecommerce-compliance), for flight compensation (use israeli-flight-compensation), or for bank and card fees (use israeli-consumer-fee-fighter)."
+  },
+  {
+    "slug": "israeli-consumer-fee-fighter",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Use when an Israeli consumer wants to cut recurring bank and credit-card charges: cancel a credit card cleanly (bitul kartis ashrai), switch to a cheaper fixed-price bank fee track (maslul amlot: basic maslul basi or expanded maslul murchav), switch banks in one click (niud / maavar beklik), stop a recurring debit (bitul harshaa lechiyuv / horaat keva), or negotiate lower fees and commissions (amlot including overdraft, FX, and securities fees). Produces a ready-to-send Hebrew cancellation letter, a rights-grounded negotiation script, and a short rights summary, grounded in Bank of Israel fee rules and Israeli consumer-banking law. Do NOT use for maximizing cashback or deals (use israeli-smart-saver), coupon hunting (use israeli-coupon-code-finder), analyzing bank transactions (use israeli-bank-connector), or household budgeting (use israeli-budget-planner)."
+  },
+  {
+    "slug": "israeli-content-marketing",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Plan and execute content marketing strategies for the Israeli market including Hebrew SEO content, Hebrew AEO for AI search, tech media outreach to Geektime and Calcalist, and B2B content. Use when user asks about Israeli content strategy, Hebrew blog posts, Israeli tech PR, or Hebrew B2B content. Covers Israeli tech media landscape, Hebrew content SEO, Hebrew keyword research, and bilingual content strategies. Do NOT use for paid ad campaigns, social-media community management, or technical SEO audits."
+  },
+  {
+    "slug": "israeli-corporate-tax-strategy",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Strategic tax analysis for Israeli company owners (baalei shlita) comparing salary, dividends, shareholder loans, and management fees as profit extraction methods. Use when user asks about paying personal tax from company funds, dividend vs salary comparison, shareholder loan tax implications, Section 3(tet) deemed interest, corporate profit extraction strategy, halokat dividendim, mashichat rvaachim, or baal shlita tax planning. Calculates total tax burden across methods, identifies optimal strategy based on assessment amount and company structure, and verifies compliance with Israeli Tax Authority rules. Prevents costly extraction mistakes by analyzing withholding, Bituach Leumi, surtax, and corporate tax interactions. Do NOT use for VAT reporting (use israeli-vat-reporting), payroll processing (use israeli-payroll-calculator), annual tax return filing (use israeli-tax-returns), or crypto tax (use israeli-crypto-tax-reporter)."
+  },
+  {
+    "slug": "israeli-coupon-code-finder",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Hunt for currently-valid discount and coupon codes for an Israeli online-store checkout, verify each candidate, and return one ranked summary instead of asking five chatbots the same question. Runs a fixed Israeli source map (coupon aggregators, cashback platforms, credit-card benefit hubs, gift-card stacking, store-direct levers, seasonal sale windows) plus a Hebrew search playbook, then checks every candidate for expiry, minimum cart, new-customer-only, and stacking rules. Use when a user is about to buy on an Israeli store and asks to find coupon codes, a discount code, kod kupon, kupon hanacha, or 'is this coupon site legit'. Never invents codes: it only reports codes found via live web search, each with source and date. Do NOT use for ongoing savings strategy or cashback-account setup (israeli-smart-saver), cross-store price comparison (israeli-product-price-comparator), or grocery prices (israeli-grocery-price-intelligence)."
+  },
+  {
+    "slug": "israeli-crypto-tax-reporter",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Calculate cryptocurrency capital gains tax per Israeli Tax Authority (Reshut HaMisim) rules and generate capital-gains reporting data and Form 1399י advance-payment data (within 30 days of each sale). Use when a user needs to compute crypto tax using FIFO cost basis, classify DeFi income (staking, liquidity mining, airdrops), prepare annual filing data, understand advance payment (mikdamot) and reporting duties, or handle unreported crypto from past years now that the Voluntary Disclosure Procedure (Nohal Gilui Mirtzon) has closed. Covers Section 88 of the Income Tax Ordinance, Circular 2018/05, the 25% capital gains ceiling for individuals, and the surtax (3% above NIS 721,560, plus 2% on capital income that itself exceeds it; frozen through 2027). Do NOT use for non-Israeli tax jurisdictions, general income tax calculations, or VAT (maam) on crypto business activities, which require separate professional consultation."
+  },
+  {
+    "slug": "israeli-customer-support-automator",
+    "category": "communication",
+    "flag": "Sc",
+    "description": "Deploy and configure customer support automation for Israeli businesses. Categorizes Hebrew support tickets, manages complaints per Consumer Protection Law 1981 (14-day returns, cooling-off periods), configures SLA with Israeli hours (Sunday-Thursday), and generates Hebrew canned responses for multi-channel support. Use when user asks to \"set up customer support\", \"automate ticket routing\", \"sherut lakokhot\", \"handle complaints\", or configure helpdesk for Israeli companies. Integrates with Monday.com and Priority ERP. Do NOT use for building chatbots (use hebrew-chatbot-builder), WhatsApp API (use israeli-whatsapp-business), or non-Israeli consumer protection."
+  },
+  {
+    "slug": "israeli-customs-duty-calculator",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Not customs advice. Classify products into Israeli customs tariff (HS) codes and calculate full landed cost for imports to Israel: customs duty, VAT 18%, and purchase tax (mas kniya). Use when user asks about Israel import tax, personal import threshold, customs duty on an online order from Amazon/AliExpress, FTA preferences from US/EU/UK/Canada, Shaar Olami tariff lookup, or the cost of bringing goods into Israel. Do NOT use for domestic VAT bookkeeping (use israeli-vat-reporting), export documentation (use israeli-export-shipping-kit), or aliyah or returning-resident personal shipments (use israeli-aliyah-customs-shipment-planner / israeli-returning-resident-customs-vehicle)."
+  },
+  {
+    "slug": "israeli-cv-builder",
+    "category": "communication",
+    "flag": "Sc",
+    "description": "Not legal advice. Generate a ready-to-send Israeli CV (korot chayim / קורות חיים) in Hebrew, English, or both: one page by default, reverse chronological, a military or national service section, dugri (direct) language, metrics-driven bullets, plus an optional Israeli cover letter (michtav mukdam / מכתב מקדים). Use when writing a CV for Israel, building a resume for AllJobs, Drushim, JobMaster, JobNet or LinkedIn Israel, preparing a bilingual tech CV, or drafting an Israeli-style cover letter. Automatically omits age, marital status and religion, grounds on which the Equal Employment Opportunities Law 1988 prohibits discrimination, and omits the photo as market convention. Do NOT use for job market research (use israeli-job-market), tech interview prep (use israeli-tech-interview-prep), salary negotiation (use israeli-tech-salary-negotiator), LinkedIn strategy (use israeli-linkedin-strategy), employer-side screening (use israeli-hr-recruitment-automator), or employment contract review."
+  },
+  {
+    "slug": "israeli-cyber-regulations",
+    "category": "security-compliance",
+    "flag": "-",
+    "description": "Not legal advice and not a compliance opinion. Israeli cybersecurity regulatory framework guidance covering INCD (Ma'arach HaSyber) national directives, Bank of Israel Directive 364, the consolidated IT, information security and cyber framework that took effect 18/05/2026 and repealed Directives 357, 361 and 363, plus Directive 366 incident reporting and Directive 362 cloud, ISA disclosure for TASE-listed companies under regulation 36 and staff position 105-33, and sector rules for fintech and healthtech. Use when user asks about \"cyber regulation Israel\", \"horaot Bank Israel 361\", \"INCD compliance\", \"Ma'arach HaSyber\", \"ISA cyber requirements\", \"sector cyber rules Israel\", or \"רגולציית סייבר\". Covers regulatory mapping, gap analysis, compliance checklists, and audit preparation for Israeli cyber frameworks. Do NOT use for privacy law compliance (use israeli-privacy-compliance instead)."
+  },
+  {
+    "slug": "israeli-cybersecurity-ops",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Coordinate Israeli-built cybersecurity tools for security operations including threat triage, vulnerability management, compliance checking, and incident response. Use when user mentions security operations, \"SOC\", vulnerability scanning, threat triage, compliance assessment, or asks to coordinate Wiz, Snyk, Check Point, CyberArk, SentinelOne, Armis, Torq, or Pentera tools. Embeds Israeli security best practices including INCD guidelines and Israeli Privacy Protection Law compliance. Do NOT use for offensive security testing or creating exploits."
+  },
+  {
+    "slug": "israeli-digital-nomad-navigator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "End-to-end guide for Israelis choosing or living digital-nomad life abroad while keeping a foothold in Israel. Use when user asks about נוודות דיגיטלית, digital-nomad visa for an Israeli passport (Thailand DTV via Tel Aviv embassy, Spain DNV, Portugal D8, Estonia, Mexico, Costa Rica, Georgia, UAE), working remotely from abroad on tlush maskoret, foreign-client invoicing under VAT Section 30, Form 1348 residency, kupat cholim continuity, or insurance that covers remote work. Branches per employment shape (Israeli employee vs freelancer with foreign clients) and covers Form A1 totalization (20-country list, US not on it), the 2026 abolition of the 10-year reporting exemption, Section 100A exit tax, foreign tax credit, and Form 5329 disclosure of Wise/Revolut/Payoneer accounts. Do NOT use for full permanent relocation (use israeli-relocation-abroad), aliyah to Israel (use israeli-aliyah-navigator), foreign nomads coming to Israel, domestic Israeli nomading, or binding tax advice."
+  },
+  {
+    "slug": "israeli-discharged-soldier-navigator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Navigate post-discharge benefits for IDF, MAGAV, Police, SHABAS, and SLE members via the MoD Department for Discharged Soldiers and Reservists (hachvana.mod.gov.il). Computes Pikadon and manak shichrur by service tier (lochem, tomech lechima, acher), checks withdrawals against the 6 permitted pre-5y purposes (studies, vocational training, driving lessons, business, marriage, apartment purchase; rental NOT included), walks Section 39a nekudot zikui via Tofes 101 and Tofes 135, and covers Mimadim 100% tuition plus the Department's own periphery scholarships. Use when a hayal meshuchrar, parent, or SLE completer asks about pikadon, manak shichrur, post-army benefits, nekudot zikui chayal meshuchrar, or free university for combat veterans. Do NOT use for miluim (israeli-miluim-manager), lone soldiers (israeli-lone-soldier-rights), third-party scholarships (israeli-academic-scholarships), or mortgages (israeli-mortgage-comparator)."
+  },
+  {
+    "slug": "israeli-divorce-navigator",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Walks a person through the Israeli divorce process end to end: the rabbinical-court vs. family-court jurisdiction choice and the joinder doctrine (kricha), the mandatory intake track (bakasha leyishuv sikhsukh and the MAHUT meetings under the 2014 family-disputes law) and the urgent-relief / protective-order carve-out, property balancing (izun mashabim, default 50/50 under the 1973 law, with section 8 deviation), spousal maintenance (mezonot isha) vs. child support (mezonot yeladim) and the Bagatz 919/15 shared-custody reform, custody / parental responsibility, the ketubah, common-law partners (yeduim betzibur), and the get plus get-refusal sanctions. Use when someone in Israel is starting or facing girushin and needs a roadmap, a property-balancing worksheet, or a checklist of what a divorce agreement must cover. Do NOT use for pension-split math (use israeli-pension-advisor), and always recommend a family lawyer for the actual filing."
+  },
+  {
+    "slug": "israeli-drug-database",
+    "category": "government-services",
+    "flag": "Sx",
+    "description": "Query the Israeli pharmaceutical database for drug information, health basket coverage, generic alternatives, and pricing. Use when user asks about Israeli medications, \"trufot\", drug names, \"sal briut\" drug coverage, generic drugs, drug prices in Israel, prescription requirements, or medication safety info. Enhances the israel-drugs MCP server with health basket context and patient-facing guidance. Do NOT use for medical advice, dosage recommendations, or diagnosis. Do NOT use for non-Israeli drug registries."
+  },
+  {
+    "slug": "israeli-e-invoice",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Generate, validate, and manage Israeli e-invoices (hashbonit electronit) per Tax Authority (SHAAM) standards. Use when user asks to create Israeli invoices, request allocation numbers, validate invoice compliance, or asks about \"hashbonit\", \"e-invoice\", \"SHAAM\", \"allocation number\", or Israeli invoicing requirements. Uses the official SHAAM document type codes including transaction invoice (300), tax invoice (305), periodic tax invoice (310), tax invoice/receipt (320), credit invoice (330), and proforma (332). Do NOT use for general accounting, bookkeeping, or non-Israeli invoice formats."
+  },
+  {
+    "slug": "israeli-ecommerce-compliance",
+    "category": "security-compliance",
+    "flag": "-",
+    "description": "Audit and ensure Israeli e-commerce legal compliance, covering Consumer Protection Law, return policies, price display, accessibility, and cookie consent. Use when user asks about \"online store compliance Israel\", \"Chok Hagnat HaTzarchan\", \"consumer protection Israel\", \"return policy Israel\", \"IS 5568 ecommerce\", \"cookie consent Israel\", or \"חוק הגנת הצרכן\". Covers cooling-off period validation, price display requirements, Hebrew terms of service generation, accessibility compliance (IS 5568), and business disclosure verification. Do NOT use for food-specific compliance (use israeli-food-business-compliance) or privacy/GDPR (use israeli-privacy-shield)."
+  },
+  {
+    "slug": "israeli-education-system",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Navigate the Israeli education system including Bagrut (matriculation) exams, psychometric entrance test (PET), university admissions, and Ministry of Education school data. Use when user asks about Israeli schools, Bagrut requirements, psychometric exam, \"psichometri\", Israeli university admissions, sekhem calculation, Israeli education levels, Hebrew education terms, or school data from Ministry of Education. Covers K-12 system, exam structure, and higher education admissions. Do NOT use for non-Israeli education systems or post-graduate academic research."
+  },
+  {
+    "slug": "israeli-elder-care-navigator",
+    "category": "health-services",
+    "flag": "-",
+    "description": "Not legal advice and not a determination of your benefit eligibility. Navigate the Israeli elder care system: long-term care benefits from Bituach Leumi (gimlat siud), private nursing care insurance (bituach siudi), old-age pension (kiztavat zikna), nursing homes (beit avot), home care (tipul bayit), assisted living (diur mugan), and enduring power of attorney (yipuy koach mitmashech). Use when user asks about caring for aging parents, siudi insurance, long-term care hours, nursing home costs, retirement pension amounts, guardian appointment (apotropus), or elderly rights in Israel. Helps the sandwich generation make informed decisions about elder care. Do NOT use for general Bituach Leumi benefits (use israeli-bituach-leumi), private pension funds or keren hishtalmut (use israeli-pension-advisor), or health insurance and HMO questions (use israeli-hmo-navigator)."
+  },
+  {
+    "slug": "israeli-election-data",
+    "category": "government-services",
+    "flag": "Si",
+    "description": "Access Israeli election and political data from the Knesset OData v4 API and the Central Elections Committee (data.gov.il). Use when user asks about Knesset, Israeli elections, MK (Member of Knesset) information, Israeli voting records (per-MK plenum votes via KNS_PlenumVote/KNS_PlenumVoteResult), legislative bills in Israel, Knesset committees, Israeli political parties, coalition data, or election results by locality or ballot. Covers Knesset OData v4 API, Central Elections Committee CSV datasets on data.gov.il, municipal elections, and Israeli political system structure. Do NOT use for non-Israeli elections or political opinion/prediction."
+  },
+  {
+    "slug": "israeli-email-sequences",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Not legal advice. Design email marketing sequences for the Israeli market with Hebrew RTL rendering, Jewish and national holiday scheduling, and anti-spam law compliance. Use when user asks about Israeli email marketing, Hebrew email campaigns, Chok HaSpam compliance, Hebrew newsletter design, or holiday-triggered email sequences. Covers Amendment 40 compliance, RTL rendering, and subject line optimization."
+  },
+  {
+    "slug": "israeli-emergency-guide",
+    "category": "health-services",
+    "flag": "-",
+    "description": "Not medical advice and not a diagnosis; in a real emergency follow the dispatcher, not this tool. Guide to Israeli emergency services, hospitals, trauma centers, and urgent care. Use when a user needs information about calling MDA (Magen David Adom), visiting Terem urgent care, navigating hospital ERs, understanding triage, or learning about patient rights during emergencies in Israel. Covers emergency numbers and non-voice channels for deaf and hard-of-hearing users, siren and shelter guidance, mental-health crisis lines, Israel's Level-1 trauma centers, ER copay rules, blood donation through MDA, and when to call 101 vs go to Terem. Do NOT use for non-Israeli emergency systems or medical diagnosis."
+  },
+  {
+    "slug": "israeli-employee-tax-refund",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Walk salaried Israeli employees through the voluntary tax-refund process with Reshut HaMisim. Reads Form 106, detects refund triggers (job change, unemployment, maternity leave, reserve duty, Section 46 donations, yishuv mezakeh, missed credit points, disability, alimony, early keren hishtalmut withdrawal), estimates the refund using 2026 brackets and credit-point values, generates a per-trigger document checklist, and fills Form 135 or routes the user to the online refund portal. Knows the 6-year window (Section 160 ITO). Use when a salaried employee asks about Israeli tax refund, החזר מס לשכירים, טופס 135, miluim refund, or refunds for previous tax years. Do NOT use for self-employed Form 1301 filers (use israeli-tax-returns), payroll math (use israeli-payroll-calculator), stock options (use israeli-stock-options-tax), crypto (use israeli-crypto-tax-reporter), or VAT (use israeli-vat-reporting)."
+  },
+  {
+    "slug": "israeli-employment-contract-reviewer",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Pre-signing red-flag audit of an Israeli employment contract (chozeh avoda) from the employee's defensive perspective. Scans a pasted contract for illegal clauses, missing mandatory protections, and unfair terms, then produces an annotated review with citations to Israeli labor law. Flags Section 14 (Saif 14) waiver traps, unenforceable non-competes, hoda'at mukdemet below statutory minimum, missing pension, missing keren hishtalmut, at-will language, and gross vs net ambiguity. Produces a negotiating points memo for the employer. Use when about to sign an Israeli employment contract and wanting an independent review before committing. Do NOT use for generating new contracts (use israeli-employment-contracts), post-hire workplace rights (use israeli-workplace-rights-navigator), payroll calculations (use israeli-payroll-calculator), or unemployment benefits (use israeli-unemployment-benefits-navigator)."
+  },
+  {
+    "slug": "israeli-employment-contracts",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Draft Israeli employment contracts (chozeh avoda) with all mandatory clauses per Israeli labor law. Use when user asks to create or generate an employment contract, calculate mandatory benefits for a contract, or asks about \"chozeh avoda\", \"Section 14\", \"Saif 14\", \"Keren Hishtalmut\", \"Dmei Havra'a\", \"convalescence pay\", \"severance\", \"pitzuim\", Israeli pension obligations, non-compete clauses in Israel, or Israeli employment compliance. Covers full-time, part-time, and contractor classification. Do NOT use for reviewing or auditing an existing contract (use israeli-employment-contract-reviewer), employee-rights questions (use israeli-workplace-rights-navigator), freelance service agreements, commercial contracts, or non-Israeli employment law."
+  },
+  {
+    "slug": "israeli-estate-settlement-navigator",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Operational project manager for settling an estate after a death in Israel. Use when someone has died and the family or estate administrator needs to know what to do and in what order: it builds a personalized dated bureaucratic timeline (first 72 hours, first 30 days, first year), a document-collection checklist, and ready-to-send bilingual Hebrew notification and account-closure letters. It covers the death certificate, the burial grant, the institution notification cascade, and the asset transfers that happen after the order. Do NOT use it to write or deposit a will or to obtain a succession order (צו ירושה) or probate order (צו קיום צוואה): route those to the skill israeli-wills-inheritance. Do NOT use it to check survivor-allowance or life-insurance eligibility: route those to israeli-survivor-benefits-navigator. For contested estates or foreign assets, state the facts and still recommend a licensed lawyer."
+  },
+  {
+    "slug": "israeli-expense-categorizer",
+    "category": "accounting",
+    "flag": "-",
+    "description": "AI-powered categorization of business expenses into Israeli tax-deductible categories based on current Israeli Tax Ordinance rules. Applies the correct deduction mechanics (vehicle = the higher of running-costs-minus-use-value or 45%, mobile phone with the ~50% disallowance floor, home office and internet proportional), maps to a common Israeli chart of accounts, and handles Osek Patur vs Osek Murshe differences for VAT eligibility (private-car VAT not deductible, running-cost VAT two-thirds). Use when you need to classify business expenses for Israeli tax reporting, prepare expense reports for your accountant, or verify deduction eligibility. Do NOT use for final tax filing, legal tax advice, or payroll-related expense processing."
+  },
+  {
+    "slug": "israeli-export-shipping-kit",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Generate the full export document set for Israeli exporters: commercial invoice (HE+EN), packing list, bill of lading / AWB / CMR, proforma, and origin documents (EUR.1, invoice origin declaration, US-Israel exporter origin statement, CIFTA Form B239). Use when user asks about exporting from Israel, Incoterms (FOB, CIF, DDP, EXW), EUR.1 certificate, approved exporter status, US-Israel FTA certificate of origin, commercial invoice template, or packing list. Do NOT use for import calculations (use israeli-customs-duty-calculator) or domestic VAT bookkeeping (use il-invoice-organizer)."
+  },
+  {
+    "slug": "israeli-fact-checker",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Verify a public claim against official Israeli data and return a sourced verdict. Use when checking a politician's statement, a viral WhatsApp or X message, a news headline, or any factual claim about Israeli inflation, prices, the state budget, government spending, exchange rates, Knesset votes, election results, housing prices, wages, unemployment, crime, or NGO and foreign-donation funding. The skill isolates the checkable assertion, routes it to the right official source (CBS, Bank of Israel, BudgetKey, Knesset, data.gov.il), pulls the figure, and labels the claim נכון, לא מדויק, מטעה, לא נכון, or לשיפוטכם with a full citation trail, or אין מספיק נתונים when no source confirms it. This matters because a hallucinated number is worse than no answer. Hebrew triggers: בדיקת עובדות, אימות טענה, פייק ניוז, האם זה נכון. Do NOT use for opinions, predictions, private personal facts, or writing articles from scratch."
+  },
+  {
+    "slug": "israeli-fertility-guide",
+    "category": "health-services",
+    "flag": "Sc",
+    "description": "Not medical or legal advice, and not an eligibility determination. Guide to fertility treatments in Israel: IVF coverage and health basket entitlements, SHABAN supplementary insurance, egg freezing, sperm and egg donation, surrogacy law, posthumous sperm use, work rights during treatment, and cost breakdowns. Use when a user asks how IVF is funded through kupat cholim, who is eligible and until what age, what a kupah does or does not pay for, or how the legal framework works. Do NOT use for medical fertility diagnosis or treatment recommendations."
+  },
+  {
+    "slug": "israeli-financial-reports",
+    "category": "accounting",
+    "flag": "-",
+    "description": "Generate Israeli-standard financial reports including profit and loss (Doch Revach VeHefsed), balance sheet (Maazan), trial balance (Maazan Bochein), and cash flow statements. Supports bilingual Hebrew/English output with NIS formatting, VAT summary reports for bi-monthly and monthly filing, year-end annual report preparation, and comparison periods. Works with Osek Patur, Osek Murshe, and Chevra (company) business types. Reflects the Israeli accounting-standards regime where full IFRS is mandatory only for public companies while private companies may use Israeli GAAP or IFRS for SMEs. Use when you need to produce financial statements, tax-related summaries, or periodic reports for Israeli businesses. Exports to PDF, Excel, and CSV formats. Do NOT use for tax filing submissions, payroll processing, or bank reconciliation workflows."
+  },
+  {
+    "slug": "israeli-fines-fighter",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Appeal parking tickets, traffic fines and bus-lane (nat\"z) tickets in Israel: generates Hebrew appeal letters, explains deadlines, and covers the administrative track under the Administrative Traffic Violations Law (hasagah 30 days, arar to the traffic tribunal 90 days, no request to be tried), why a nat\"z ticket is not a parking ticket, why a municipal ticket cannot be converted to a warning, the points system, and when the late-payment surcharge can be waived. Use when a user receives a knasa (fine) and wants to understand their options, draft an appeal, or calculate penalty points."
+  },
+  {
+    "slug": "israeli-firearm-license-navigator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Not legal advice. Navigate the Israeli private firearm license process end to end, from eligibility through the conditional approval (ishur mutne), range training, purchase, the 3-year license, refresher training, renewal, late renewal, loss or theft, replacement, home storage rules, and appeals against refusal or cancellation. Use when user asks about \"rishayon neshek\", \"rishayon le-kli yeriya\", \"ishur mutne\", \"tavchin\", \"hachsharat rianun\", \"chidush rishayon neshek\", \"kasefet le-neshek\", or asks what the next step is after receiving a conditional approval. Places the user on a stage map, computes deadlines with bundled scripts, and returns one concrete next action with the official gov.il source. Do NOT use for organizational or security-guard licenses, hunting permits, tactical shooting advice, or for helping anyone misrepresent facts to the licensing authority."
+  },
+  {
+    "slug": "israeli-flight-compensation",
+    "category": "travel",
+    "flag": "Sc",
+    "description": "Determines whether an air passenger is owed compensation under Israel's Aviation Services Law (חוק שירותי תעופה, 2012, \"חוק טיבי\") and drafts a Hebrew demand letter to the airline. Use when a flight to or from Israel was cancelled, delayed, overbooked, downgraded, or moved earlier, and the user asks \"am I owed compensation\", \"pitzuy al bitul tisa\", \"ta'osa hit'akva\", \"the airline cancelled my flight\", or wants to claim without paying a claim-handling service a cut. Calculates the amount by distance band (2026 figures), explains assistance rights, and routes refusals to small claims. Do NOT use for booking flights (use israeli-flight-finder), lost or damaged baggage (Montreal Convention), travel insurance, or flights with no Israeli departure or arrival."
+  },
+  {
+    "slug": "israeli-flight-finder",
+    "category": "travel",
+    "flag": "-",
+    "description": "Compare real flight prices from Ben Gurion (TLV): build pre-filled search links for Google Flights, Skyscanner, and KAYAK for the traveler's exact route and dates, read the live fares off them, and add Israeli-airline baggage for a true total cost. Use when someone asks to find or compare cheap flights from Israel, wants the cheapest fare or the cheapest dates to fly, or asks about El Al, Israir, Arkia, or Wizz Air baggage fees, seasonal TLV pricing, or Issta flight+hotel packages. Presents a real comparison and never quotes invented prices. Do NOT use for domestic travel within Israel (use israeli-travel-planner), train schedules (use railil), or hotel-only bookings."
+  },
+  {
+    "slug": "israeli-food-allergy-navigator",
+    "category": "health-services",
+    "flag": "-",
+    "description": "Not medical advice and not a diagnosis. Bureaucracy navigator for life-threatening (IgE) food allergy in Israel, focused on children. Covers what ganim, schools and tzaharonim owe under Ministry of Education standing instruction 0042: allergen-free zones and signage, menus planned ahead for holidays and trips, catering approval, non-discrimination. Builds the parent packet (annual health declaration, allergist letter, two in-date EpiPens, medication forms) and the accommodation-request letter. Covers the personal medical assistant criterion and the five prohibitions schools most often breach, plus the Bituach Leumi disabled-child claim for allergy at 50% (1,943 NIS), ages 9 months to 10 years, with its five qualifying alternatives. Use when a parent or allergic adult needs entitlements, school arrangements, or a claim. Do NOT use for celiac or gluten (use israeli-celiac-navigator), meal planning (use israeli-nutrition-planner), clinical diagnosis, drug dosing, or non-Israeli systems."
+  },
+  {
+    "slug": "israeli-food-business-compliance",
+    "category": "food-and-dining",
+    "flag": "-",
+    "description": "Guide Israeli food business regulatory compliance, including business licensing, kashrut certification, health ministry requirements, food labeling (with red/green front-of-package labels), and 18% VAT rules. Use when user asks about \"food business license Israel\", \"Misrad HaBriut requirements\", \"kashrut certification process\", \"food labeling Hebrew\", \"restaurant permit Israel\", \"food import regulations\", \"red label sugar salt fat\", or \"רישיון עסק מזון\". Covers Ministry of Health licensing by business type, Rabbanut kashrut application process, certification renewal tracking, Hebrew food label generation, front-of-package red/green warning labels, and health inspection preparation. Do NOT use for restaurant daily operations (use israeli-restaurant-ops) or general business compliance."
+  },
+  {
+    "slug": "israeli-freelancer-ops",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Manage daily operations for Israeli freelancers (osek murshe, osek patur) - invoice aging with collection reminders, utility bill collection via browser automation, tax deadline alerts (VAT, Bituach Leumi, mkdamot, annual report), osek patur threshold monitoring, and organized accountant packages (havila). Use when a freelancer needs help tracking invoices, preparing documents for their accountant, monitoring their osek patur revenue ceiling, or staying on top of Israeli tax filing deadlines. Prevents missed VAT filings (which trigger automatic penalties), forgotten invoice follow-ups, and disorganized handoffs to accountants. Do NOT use for VAT return preparation (use israeli-vat-reporting), e-invoice generation (use israeli-e-invoice), or payroll/employee management."
+  },
+  {
+    "slug": "israeli-freelancer-service-agreement",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Draft a tailored Israeli freelancer service agreement (heskem matan sherutim) between an independent service provider (osek patur or osek murshe) and their client. Covers scope of services, payment terms under the 2017 Prompt Payment to Suppliers Law, the independent-contractor declaration that lowers the risk of a court reclassifying the relationship as employment (yachasei oved-maavid), IP ownership, confidentiality, termination, and indemnity. Use when a freelancer, consultant, designer, or developer needs a written contract before a project, or asks to draft a heskem hitkashrut or contractor agreement. Prevents costly retroactive employee-reclassification and unpaid-invoice disputes. Do NOT use for employment contracts (use israeli-employment-contracts), auditing a contract before signing (use israeli-employment-contract-reviewer), day-to-day invoicing (use israeli-freelancer-ops), or leases (use israeli-rental-agreements)."
+  },
+  {
+    "slug": "israeli-freelancer-year",
+    "category": "courses",
+    "flag": "-",
+    "description": "A 6-chapter course teaching the Israeli freelancer's strategic calendar. 12 deadlines, 6 timing decisions, and a working protocol with Reshut HaMisim and VAT."
+  },
+  {
+    "slug": "israeli-genealogy-researcher",
+    "category": "education",
+    "flag": "-",
+    "description": "Not legal advice, and not a ruling on record access. Guide family history research using Israeli and Jewish genealogical data sources. Use when a user asks about tracing Israeli or Jewish roots, finding family records, researching ancestors who lived in Ottoman Palestine, British Mandate Palestine, or modern Israel, decoding Hebrew-language historical documents, or building a family tree from Israeli records. Produces structured research plans, explains how to navigate IGRA, JewishGen, NLI archives, and municipal record systems, and helps decode Hebrew handwriting in historical certificates. Prevents dead-end research by matching the right data source to each genealogical question. Do NOT use for Yad Vashem Holocaust victim name searches specifically (use dedicated Holocaust research tools), DNA ancestry interpretation, or non-Israeli genealogy research."
+  },
+  {
+    "slug": "israeli-gov-form-automator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Automate Israeli government form filling via Playwright browser automation and PDF population. Prevents hours of manual form filling and data entry errors on government portals. Use when user asks about filling government forms, \"tofes\" (form), \"milui tfasim\" (form filling), \"gov.il\" portal submissions, online form submission, Rashut HaMisim (Tax Authority) filings, Bituach Leumi (National Insurance) claims, or Rasham HaChevarot (Companies Registrar) documents. Validates Teudat Zehut (ID numbers) with check digit, Israeli phone numbers (+972), and Hebrew address fields. Supports Doch Shnati (annual tax report), maternity grant claims, and company registration forms. Do NOT use for classified or security-clearance government systems."
+  },
+  {
+    "slug": "israeli-grocery-price-intelligence",
+    "category": "food-and-dining",
+    "flag": "Sc",
+    "description": "Access and compare Israeli supermarket prices using mandatory Price Transparency Law data feeds. Use when user asks about \"supermarket prices Israel\", \"price comparison Shufersal\", \"Rami Levy prices\", \"grocery prices\", \"Price Transparency Law\", \"shopping list optimizer\", \"food costs Israel\", or \"השוואת מחירי סופר\". Covers chain-specific XML feed parsing, cross-chain price comparison, shopping list optimization, price trend tracking, and restaurant ingredient cost analysis. Do NOT use for restaurant operations (use israeli-restaurant-ops) or non-food retail prices."
+  },
+  {
+    "slug": "israeli-healthcare-payroll",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Explains and sanity-checks the salary of Israeli public-healthcare-sector workers (nurses / achim ve'achayot, allied-health / miktzo'ot habriut such as physiotherapists, occupational therapists, dietitians, and speech clinicians, hospital pharmacists, and doctors / rofim), which is set by public-sector collective agreements, not private-sector negotiation. Use when a user asks how a healthcare payslip is built: which wage grade (dirug) applies, the base combined-salary cell (grade daraga by seniority vetek), healthcare tosafot like the nurses' tosefet achayot or the allied-health training supplement, shift and on-call pay (mishmarot, kononut, toranut), and how gross becomes net. Do NOT use for standard private-sector gross-to-net payroll (use israeli-payroll-calculator), teachers' pay (use israeli-teacher-payroll), or private home caregivers (use foreign-caregiver-payroll)."
+  },
+  {
+    "slug": "israeli-heritage-explorer",
+    "category": "education",
+    "flag": "Sx",
+    "description": "Research Israeli and Jewish cultural heritage using the National Library of Israel's digital archives. Use when a user asks about Israeli history, Jewish heritage, historical photographs, ancient manuscripts, British Mandate documents, immigration waves, or wants primary source citations from NLI. Produces annotated research reports with direct links to NLI assets including manuscripts, photographs, maps, government records, and oral histories. Prevents hours of manual archive browsing and missed primary sources by leveraging the NLI OpenLibrary API with structured field queries. Do NOT use for modern news, current events, academic journal articles behind paywalls, or Yad Vashem Holocaust victim searches (use dedicated Holocaust research tools)."
+  },
+  {
+    "slug": "israeli-hiking-day-planner",
+    "category": "travel",
+    "flag": "Sc",
+    "description": "Not a safety clearance, official closures and warnings always override it. Plan a day hike in Israel and get a go, caution or no-go call plus a printable route card. Checks the IMS hourly heat-stress forecast and warnings, flash-flood risk from rain upstream, INPA closed trails and site hours, Home Front Command restrictions, mine areas and IDF firing zones, then works out the latest safe start, a finish before dark and water per person from official INPA and Ministry of Education figures. Use when someone asks if a trail is OK this weekend, plans a hike in the Negev, Judean Desert, Dead Sea, Galilee or Golan, or asks how much water to bring, when to start, or what to do in an emergency on the trail. Do NOT use for general domestic trip planning, accommodation or transport (use israeli-travel-planner), trips abroad, or multi-day treks and camping."
+  },
+  {
+    "slug": "israeli-hmo-navigator",
+    "category": "health-services",
+    "flag": "-",
+    "description": "Not medical advice and not a determination of your eligibility or of what you owe. Navigate Israel's four HMOs (kupot cholim) and healthcare system for costs, referrals, emergency-room fees and coverage decisions. Use when user asks about Clalit, Maccabi, Meuhedet, Leumit, \"kupat cholim\", health basket (sal briut), copayments (hishtatfut atzmit), emergency room (miyun) fees and exemptions, Form 17 (tofes 17), ambulance refunds, prescription copays, supplementary insurance (bituach mashlim), or switching HMOs. Do NOT use for emergency medical advice or for clinical drug information."
+  },
+  {
+    "slug": "israeli-home-defect-report",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Helps a buyer of a new Israeli apartment document construction defects and act in time. Builds a room-by-room handover walkthrough, turns findings into a dated defect log for the protokol mesira, works out which statutory window each defect falls in under the Sale (Apartments) Law 1973 and who must prove what, and drafts a Hebrew repair-demand letter. Use when a user says \"bedek bait\", \"protokol mesira\", \"likuyim badira\", \"the contractor will not fix\", or \"is it too late to complain\". It matters because periods run from handover, differ by defect type, and differ again for flats bought before April 2011, so a missed notice deadline can forfeit a good claim. Produces a log and a letter, not an engineering opinion. Do NOT use to assess structural safety or load-bearing damage (needs a licensed engineer), to value repairs, for late-delivery compensation, for rental defects (use israeli-rental-agreements), or for a self-built home (use israeli-private-home-construction)."
+  },
+  {
+    "slug": "israeli-hon-declaration-preparer",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Not tax advice and not a filed declaration. Builds a Declaration of Capital (hatzharat hon, Form 1219) preparation pack after Reshut HaMisim demands one under Section 135. Enumerates every asset and liability class the form requires, gives the valuation basis per class (cost rather than market value, inherited or gifted assets at 1 shekel, pension and gemel at total deposits only), assembles the per-section document checklist, and reconciles the growth since your previous declaration against declared income so an unexplained gap is visible before you file. Use when you received a hatzharat hon demand, need to know which assets must be declared, are filling Form 1219, or must explain a capital increase to the assessor. Do NOT use for the annual return (use israeli-tax-returns), profit-extraction planning (use israeli-corporate-tax-strategy), or the trapped-profits regime (use israeli-trapped-profits-planner)."
+  },
+  {
+    "slug": "israeli-hotzaa-lapoal-debtor",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. For someone who has had an Israeli enforcement file (hotzaa lapoal) opened against them and must act before a deadline. Use when the user received an azhara (warning), discovered a file against them, had a bank account or salary attached (ikul), was barred from leaving the country, or has a bounced check in enforcement. Identifies which of the five file types they are in, because each carries a different challenge route and clock: 30 days to object on form 218, versus a paraati claim on form 236 (טופס 236) with no deadline that cannot attack a judgment. Covers the five restrictions the registrar can impose, the 30-day warning before one takes effect and how each is lifted, and which wages and benefits cannot be attached. Matters because missing the short objection window forfeits defences permanently. Do NOT use to open a file as a creditor, for small claims before judgment, for traffic or municipal fines, or for insolvency and debt discharge, which is a different forum."
+  },
+  {
+    "slug": "israeli-hr-recruitment-automator",
+    "category": "communication",
+    "flag": "Sc",
+    "description": "Not legal advice. Employer-side hiring automation for Israeli companies. Drafts Hebrew job descriptions against the published requirements of the Equal Employment Opportunities Law 1988, posts to Israeli job boards (AllJobs, Drushim, JobMaster, LinkedIn Israel), screens resumes with Israeli context (military service, academic institutions, tech bootcamps), schedules interviews around Israeli holidays and Shabbat, and generates offer letters with mandatory Israeli employment clauses. Use when user asks to \"write a job description\", \"post a job in Israel\", \"screen Israeli resumes\", \"pirsum misra\", \"srikat meumadim\", \"michtav ha'a'sa'a\", or automate hiring workflows for Israeli companies. Do NOT use for job searching (use israeli-job-market), interview preparation (use israeli-tech-interview-prep), salary negotiation (use israeli-tech-salary-negotiator), employment contracts legal review (use israeli-employment-contracts), or freelancer hiring."
+  },
+  {
+    "slug": "israeli-id-validator",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Validate and format Israeli identification numbers including Teudat Zehut (personal ID), company numbers, amuta (non-profit) numbers, and partnership numbers. Use when user asks to validate Israeli ID, \"teudat zehut\", \"mispar zehut\", company number validation, or needs to implement Israeli ID validation in code. Includes check digit algorithm and test ID generation. Do NOT use for non-Israeli identification systems."
+  },
+  {
+    "slug": "israeli-insurance-comparator",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Not insurance advice and not insurance marketing. Compare car insurance (mandatory hova, comprehensive makif, third-party), home insurance, and health supplementary insurance across 20+ Israeli insurers using official government calculators and private comparison platforms. Use when a user needs to find the cheapest insurance quote, understand policy differences, or prepare for annual renewal negotiations. Guides through CMA calculator at car.cma.gov.il, Hova.co.il, Shukabit, Wobi, and Bestie. Do NOT use for life insurance, pension fund selection, or travel insurance comparisons."
+  },
+  {
+    "slug": "israeli-insurance-duplication-checker",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Not insurance or pension advice and not insurance or pension marketing. Audits the insurance an Israeli household already pays for, across health, long-term care, dental, disability, life, personal accident, motor, home, mortgage, travel and service riders, and separates real duplication from cover that legitimately stacks. Use when a user asks whether they are paying twice for insurance, wants to cut insurance costs, mentions כפל ביטוחי, holds a שב\"ן plan alongside a private health policy, has surgery cover through an employer or professional group, pays for a private ביטוח סיעודי next to the kupa group policy, wonders whether a private אכ\"ע policy is redundant next to the pension fund, or asks which policy to cancel first. Do NOT use for comparing or buying new policies (israeli-insurance-comparator), for co-pays and costs inside the public health system (israeli-hmo-navigator), or for the pension savings product itself (israeli-pension-advisor)."
+  },
+  {
+    "slug": "israeli-job-market",
+    "category": "communication",
+    "flag": "-",
+    "description": "Not legal advice and not employment-law advice. Aggregate Israeli job market data, optimize Hebrew CVs, benchmark salaries, and track employment trends. Use when user asks about job searching in Israel, Israeli CV writing, Hebrew resume, salary expectations in Israel, AllJobs, Drushim, JobMaster, JobNet, LinkedIn Israel, Israeli job interviews, or Israeli employment benefits. Covers major job platforms, salary data, and Israeli workplace culture. Do NOT use for international job markets outside Israel or immigration/visa work permits (see separate skill)."
+  },
+  {
+    "slug": "israeli-land-tenders",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Israeli Land Authority (RMI) tender data, land allocation guidance, and bid process navigation. Use when user asks about Israeli land tenders, \"michraz\", \"rashut mekarkei yisrael\", RMI, Israel Land Authority, government land auctions, \"haktzaah\", land lottery (\"hagralah\"), \"Dira BeHanacha\" sub-tracks (Mechir Lamishtaken, Mechir Matara, Mechir Muphchat, Dira Lehaskir), resale lockup, building rights, or state land allocation. Enhances remy-land-authority MCP server with tender process guidance and Hebrew terminology. Do NOT use for private real estate transactions (use israeli-real-estate skill instead) or non-Israeli land systems."
+  },
+  {
+    "slug": "israeli-linkedin-strategy",
+    "category": "marketing-growth",
+    "flag": "-",
+    "description": "Develop bilingual Hebrew/English LinkedIn content strategies for the Israeli tech ecosystem, including post timing, Hebrew hashtags, and audience engagement patterns. Use when user asks about LinkedIn strategy for Israel, Hebrew LinkedIn posts, Israeli tech networking, or asks about \"linkedin\", \"reshet mitkademet\", \"tochen\" (content), bilingual posting, or Israeli professional branding. Covers Hebrew/English post optimization, Israeli tech topic trends, cultural timing around holidays and work week, and Hebrew hashtag research. Do NOT use for general international LinkedIn strategy, paid LinkedIn advertising, or non-Israeli market targeting."
+  },
+  {
+    "slug": "israeli-lone-soldier-rights",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Map the chayal boded (lone soldier) benefits package for IDF mandatory-service soldiers, distinct from the regular discharged-soldier stack. Active-duty: monthly grant equal to 100 percent of a private base salary, rent + utilities via Mashak Tash, funded flights home (the מתגעגעים הביתה program), 60 special-leave days per year (30 abroad), free Beit HaChayal lodging. Post-discharge: up to 1,000 NIS per month for 12 months of rent (cap 12,000 NIS), a 10-year window (vs 5y regular) for the section 7 / 7א study benefits, the Aliyah Ministry grant for olim. Use when an oleh, estranged Israeli soldier, parent, Garin Tzabar alumnus, or new immigrant planning enlistment asks about chayal boded rights, recognition (Form 7304 / Form 62), monthly grant, rent assistance, Beit HaChayal, or post-discharge benefits. Do NOT use for the regular Pikadon stack (israeli-discharged-soldier-navigator), general aliyah, miluim, or scholarships."
+  },
+  {
+    "slug": "israeli-market-fit",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Not legal advice. Assess whether a product or service fits the Israeli market before you build, launch, or localize it. Use when a founder or marketer asks 'will this work in Israel', 'who is the Israeli buyer', wants buyer personas or avatars for Israel, market sizing, product-market-fit, or a go / pivot / no-go decision, or asks in Hebrew about התאמת מוצר לשוק הישראלי, חקר שוק, or אווטאר קונה. Produces a market-fit report: segment sizing (secular, Haredi, Arab-Israeli, olim, periphery), buyer-avatar cards, localized positioning angles, and a viability verdict contrasting the global market with Israeli reality (Hebrew and RTL, shekel pricing, payment habits, regulatory gates, seasonality). Israel is a small, segmented market where a global plan usually must change. Do NOT use for writing the survey itself (hebrew-survey-builder), running paid ads (israeli-paid-ads), SEO content (israeli-content-marketing), or launch PR (israeli-product-launch)."
+  },
+  {
+    "slug": "israeli-marketplace-seller",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Manage online selling across Israeli marketplaces (Zap, Yad2, Facebook Marketplace, and Instagram Shopping). Use when user asks about \"sell on Zap\", \"sell on Yad2\", \"Facebook Marketplace Israel\", \"Instagram Shopping Israel\", \"online selling Israel\", \"product listing Hebrew\", or \"מכירה אונליין\". Covers product listing creation, competitor price monitoring (including against retailers like KSP), inventory sync, review management, sales analytics, business registration (osek murshe/patur), tax-invoice and Israel-Invoice (allocation-number) obligations, and consumer-protection rules across Israeli marketplaces. Do NOT use for international marketplaces (Amazon, eBay) or physical store operations."
+  },
+  {
+    "slug": "israeli-media-authenticity-verifier",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Run a structured check on whether an image or video is AI-generated, digitally manipulated, or authentic-but-miscaptioned, and produce a sourced verdict with a confidence level. Use when a user forwards a dramatic war or news photo or clip on WhatsApp or Telegram and asks if it is real, when a journalist or community moderator needs a repeatable verification report before sharing or debunking, or when someone gets a suspicious image or voice claiming to be a known person. Combines cryptographic provenance (C2PA Content Credentials, SynthID, EXIF metadata), the agent's own visual inspection against an artifact checklist, and source tracing (reverse-image search, earliest-appearance, geolocation). This is a verifier, not a magic detector: it never claims certainty from one signal and says can't-verify when evidence is thin. Do NOT use for numeric or textual claim fact-checking (use israeli-fact-checker), for generating or removing deepfakes, or as court-admissible forensic certification."
+  },
+  {
+    "slug": "israeli-mental-health-navigator",
+    "category": "health-services",
+    "flag": "Sc",
+    "description": "Not a clinical diagnosis, not treatment, and not legal advice. Guide to mental health services in Israel including therapy through kupot cholim, crisis hotlines, PTSD resources, and workplace mental health rights. Use when a user needs information about accessing psychiatric or psychological care, finding subsidized therapy, understanding the 2015 mental health reform, using crisis lines like ERAN (1201) or Natal, or navigating PTSD recognition through Bituach Leumi. Covers CBT, EMDR, private therapy costs, and employee mental health days. Also covers psychiatric emergency rooms and the rights that apply to compulsory hospitalization. Do NOT use for clinical diagnosis or medication recommendations."
+  },
+  {
+    "slug": "israeli-miluim-manager",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Comprehensive guide to Israeli reserve duty (miluim) rights, compensation, tax benefits, employer obligations, IDF grants and the Ministry of Defence disability track. Use when a reservist, employer or family member needs help with the four payment tracks, where only salary reimbursement comes from Bituach Leumi and tagmul nosaf, tagmul meyuchad and the over-age tagmul are all paid by the IDF; the two-layer tagmul meyuchad (flat 133.33/day for days 32-60, then a rate set by the service year); Keren HaSiyua grants banded by activity tier; Amendment 283 combat tax credits, granted the tax year after service; employment protection and its two different committees; state-funded legal representation; deferring or shortening a call-up; or appealing a rejected Bituach Leumi claim within 12 months to the Labour Court. Do NOT use for active-duty conscription, draft deferral policy, or career military matters."
+  },
+  {
+    "slug": "israeli-mortgage-comparator",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Compare mortgage tracks (maslulei mashkanta) across Israeli banks, calculate monthly payments for mixed-track portfolios, and understand Bank of Israel Directive 329 limits including LTV ceilings, the payment-to-income prohibition, and the cap on the variable-rate share. Use when a user needs to evaluate mortgage offers from different banks, calculate refinancing savings, or understand how Prime rate changes affect their payments. Covers Leumi, Hapoalim, Discount, Mizrachi-Tefahot, FIBI, Mercantile, and Yahav. Do NOT use for commercial real estate loans, business credit lines, or non-Israeli mortgage products."
+  },
+  {
+    "slug": "israeli-municipal-audit-report",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Not legal advice. For the internal auditor of an Israeli local authority writing the statutory annual report. Use when the user is a mevaker of a municipality, local council or regional council, or works in that office, and needs to structure the annual report, work out the statutory timeline, decide what belongs in the report, or understand who may see it and when. Covers the duties under section 170A of the Municipalities Ordinance, what an audited municipal body is, how the annual work plan is set and the two-topic cap on committee-requested subjects, the 1 April submission date, the full chain of deadlines through the mayor, the audit committee and the council including both fallback branches, the publication ban, and the rule that the report is not admissible as evidence. Do NOT use for state comptroller audits, for private-sector or company internal audit, for public complaints handled by the ombudsman role, or for financial-statement audits by an external accountant."
+  },
+  {
+    "slug": "israeli-nutrition-planner",
+    "category": "health-services",
+    "flag": "-",
+    "description": "Plan meals and make dietary decisions based on Israeli Ministry of Health guidelines, the Nutritional Rainbow diet, and front-of-package red/green labeling. Use when user asks about \"healthy eating Israel\", \"meal plan\", \"tochnit tazona\", \"keshet tazonit\", \"red label food\", \"tiyug adom\", \"kosher meal plan\", \"halal meal plan\", \"Pesach menu\", \"weekly menu\", \"what to eat\", or \"tazona briut\". Covers the rainbow food groups, red-label thresholds (sugar, sodium, saturated fat), the annually updated green label, kosher and halal planning, Pesach kitniyot, fasting days (Yom Kippur, Ramadan, minor fasts), Israeli nutrient gaps with supplement upper limits and drug interactions, pregnancy food safety, allergen and gluten label reading, HMO dietitian entitlements, and GLP-1 context. This skill refuses to set calorie or deficit targets and routes any sign of disordered eating to care. Do NOT use for clinical nutrition therapy, eating disorder treatment, sports nutrition, or medical dietary prescriptions."
+  },
+  {
+    "slug": "israeli-oncology-navigator",
+    "category": "health-services",
+    "flag": "-",
+    "description": "Not medical or legal advice. Bureaucracy navigator for cancer patients and caregivers in Israel. Covers Bituach Leumi (disability, 4-rate שר\"מ table 50/112/188/235%, pediatric ילד נכה, Section 9(5) tax exemption, arnona, vocational rehabilitation, occupational-cancer track, appeal windows of 60 days for נכות כללית and 90 days for שר\"מ); the 2026 health basket (drugs, exceptions committee, severe-illness co-pay exemption, dental funding, surgery wait-time and Form 17, hereditary-cancer genetic testing, home chemo, medical cannabis, travel reimbursement, hospital parking exemption, post-surgical rehab); supplementary tiers; palliative care; fertility preservation; family caregiver sick days; cancer-type NGOs; experimental, off-label and treatment-abroad pathways. Use when a patient or caregiver needs to understand entitlements, file applications, or appeal a refusal. Do NOT use for medical diagnosis, treatment decisions, drug dosing, or non-Israeli healthcare systems."
+  },
+  {
+    "slug": "israeli-paid-ads",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Create and optimize paid advertising campaigns for the Israeli market across Google Ads, Meta (Facebook/Instagram), and Israeli platforms (Taboola, Outbrain, Yad2, publisher networks). Use when user asks about Israeli PPC, Hebrew ad copy, Israeli audience targeting, or ad budget optimization. Covers Hebrew keyword research, Israeli Consumer Protection Law ad regulations, Amendment 13 consent rules for ad targeting, local bidding strategies, and audience segmentation. Do NOT use for organic social media, SEO, email marketing, or non-Israeli ad markets."
+  },
+  {
+    "slug": "israeli-patent-guide",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Full guidance through the Israeli patent process: prior art search on ILPO database, national application filing, PCT international filing via ILPO, fees, and maintenance. Use when you need to check invention novelty, file a patent in Israel, track payment deadlines, or understand pharmaceutical patent term extension (PTE). Saves hours of research and prevents costly filing mistakes. Do NOT use for trademark registration, design patents, or legal advice replacing a licensed patent attorney."
+  },
+  {
+    "slug": "israeli-payment-orchestrator",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Orchestrate Israeli payment gateways (Cardcom, Tranzila, PayMe, Meshulam, iCredit, Pelecard) with unified routing, fallback, and installments (tashlumim). Use when user asks about multi-gateway payment integration, \"slikat kartisim\", \"tashlumim\", payment routing, Shva network, BOI payment-services regulation, gateway comparison, or building a payment abstraction layer for Israeli merchants. Provides unified API patterns, installment handling, Shva clearing rules, and regulatory compliance. Do NOT use for single gateway setup (use cardcom-payment-gateway or tranzila-payment-gateway instead)."
+  },
+  {
+    "slug": "israeli-payroll-calculator",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Calculate Israeli payroll including income tax, Bituach Leumi (National Insurance), health tax, pension contributions, shovi rechev (company-car use value), and net salary. Use when user asks to calculate salary, \"tlush maskoret\", payroll deductions, \"bruto to neto\", employer cost, tax credits (nekudot zikui), company car impact on salary, or needs help understanding Israeli payslip items. Covers employees, freelancers (atzmai), and employer cost calculations. This skill starts from an AGREED GROSS. Do NOT use it to work out what gross is owed from a timesheet, or to check overtime, weekly-rest premium or a missing hours record (use israeli-attendance-wage-checker), and do NOT use it for US, UK, or other countries' payroll calculations."
+  },
+  {
+    "slug": "israeli-pension-advisor",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Navigate the Israeli pension and savings system including pension funds (keren pensia), manager's insurance (bituach menahalim), training funds (keren hishtalmut), severance handling at Form 161, Tikun 190 post-60 deposits, and retirement planning. Use when user asks about Israeli pension, \"pensia\", \"keren hishtalmut\", retirement savings, \"bituach menahalim\", pension contributions, tax benefits from savings, severance withdrawal vs continuity, or pension at divorce / relocation. Uninformed pension decisions cost hundreds of thousands of NIS over a lifetime. Covers mandatory pension, voluntary savings, withdrawal rules, and life events (divorce, relocation, death). Do NOT provide specific investment recommendations or fund performance comparisons."
+  },
+  {
+    "slug": "israeli-pension-decoded",
+    "category": "courses",
+    "flag": "-",
+    "description": "A 6-chapter course on the Israeli pension system for non-experts. Teaches the two-question decision tree (do you need a fund, who inherits), how default funds work, how to read pensianet, and when to switch. Anchored to 2026 numbers."
+  },
+  {
+    "slug": "israeli-personal-assistant",
+    "category": "communication",
+    "flag": "Si",
+    "description": "A smart personal assistant that understands the Israeli context: workday planning (Sunday-Thursday), drafting messages in natural Hebrew, reminders for business obligations (VAT, Bituach Leumi, holidays), and help composing emails to official bodies. Use when you need a morning brief, professional WhatsApp drafting, scheduling around Shabbat and holidays, or writing formal Hebrew emails. Saves daily time and prevents communication missteps. Do NOT use for calendar API integration (use shabbat-aware-scheduler), automated email sending (use gws-hebrew-email-automation), or accounting calculations (use accounting skills)."
+  },
+  {
+    "slug": "israeli-phone-formatter",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Validate, format, and convert Israeli phone numbers between local and international (+972) formats. Use when user asks to validate Israeli phone number, format phone for SMS or WhatsApp, convert to +972, check phone prefix, or implement Israeli phone input validation in code. Handles mobile (050-055, 058, plus Palestinian 056/059), landline (02, 03, 04, 08, 09), non-geographic (072-074, 076, 077, 079), toll-free (1-800), shared-cost 1-700, premium 1-900, and star-service numbers, and emits strict E.164 output for libphonenumber and WhatsApp Business API. Do NOT use for non-Israeli phone systems or general telecom questions."
+  },
+  {
+    "slug": "israeli-postgres-toolkit",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Best practices for PostgreSQL in Israeli apps, covering Supabase patterns, Hebrew text indexing with ICU collation, shekel/NIS currency handling, Israeli date formats, and Asia/Jerusalem timezone gotchas. Use when user asks to \"set up Hebrew full-text search\", \"handle NIS currency in Postgres\", \"tipul b'ivrit b'database\", or configure Israeli-specific database patterns. Includes performance tuning, RLS policies for multi-tenant Israeli SaaS, and common Israeli data type validations. Do NOT use for general PostgreSQL administration unrelated to Israeli requirements, or for non-PostgreSQL databases."
+  },
+  {
+    "slug": "israeli-price-quote-generator",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Generate compliant Hebrew price quotes (hatzaat mechir / הצעת מחיר) for Israeli freelancers and small businesses. Use when user asks to create a price quote, quote a client, build a pre-sale proposal with VAT, send a hatzaat mechir, or draft a הצעת מחיר. Covers 18% VAT math (or VAT-exempt for oseik patur), validity period (תוקף ההצעה), payment terms aligned with Chok Moser Tashlumim leSapakim 5777-2017 (the Late Payment Law: shotef+30, statutory default shotef+45 for B2B), oseik murshe vs oseik patur header rules, escalation and cancellation clauses, Bit/PayBox/bank transfer payment details, and bilingual HE/EN layout. Outputs ready-to-send Hebrew markdown or printable HTML. Do NOT use for government tender proposals (use israeli-tender-proposal-builder), for generating actual tax invoices after the quote is accepted (use green-invoice), or for chasing unpaid invoices (use israeli-client-payment-chaser)."
+  },
+  {
+    "slug": "israeli-privacy-shield",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Israeli Privacy Protection Law compliance guidance including Amendment 13 (effective August 14, 2025), database registration, consent requirements, data security, cross-border transfers, breach notification, privacy protection officer appointment, and AI governance. Use when user asks about Israeli privacy law, \"haganat pratiut\", \"tikun 13\", data protection in Israel, GDPR compliance for Israeli companies, privacy policy requirements, or database registration. Covers the Privacy Protection Law 1981, Amendment 13, and 2017 Security Regulations. Do NOT use for EU GDPR-only questions without Israeli context."
+  },
+  {
+    "slug": "israeli-product-launch",
+    "category": "marketing-growth",
+    "flag": "-",
+    "description": "Plan and execute product launches targeting the Israeli tech market, including media outreach, VC demo day preparation, and community engagement. Use when user asks about launching a product in Israel, pitching Israeli media, Hebrew press releases, or asks about \"hashkaa\", \"hasakat mutzar\", \"Geektime\", \"Calcalist\", Israeli tech PR, or startup launch strategy. Covers Israeli tech media outlets, holiday timing, 8200 alumni networks, and early-adopter communities. Do NOT use for general global product launches, non-Israeli markets, or paid advertising campaigns."
+  },
+  {
+    "slug": "israeli-product-price-comparator",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Compare product prices across major Israeli retailers and e-commerce platforms including Zap.co.il, KSP, iDigital, Ivory, Bug, and more. Use when the user wants to find the best price for electronics, appliances, computers, or consumer goods in Israel, needs to compare local vs. import pricing, or wants guidance on price tracking tools and Israeli consumer protection rights. Do NOT use for comparing grocery or food prices, real estate, or financial products."
+  },
+  {
+    "slug": "israeli-property-appraisal",
+    "category": "tax-and-finance",
+    "flag": "Sx",
+    "description": "Not a licensed appraisal (shuma) and no substitute for a licensed shamai mekarkein. Builds a comparable-transactions analysis for an Israeli property from official government data, and handles the appraisal processes around it: a low bank mortgage appraisal under Standard 19, and a betterment levy (heitel hashbacha) assessment. Use when someone asks what a property is worth, says the bank's appraisal came in low and blocked their mortgage, received a betterment levy bill from the local planning committee, or needs the gush and helka for an address. Resolves an address to its parcel, pulls real recorded transactions, and assembles the principles and arguments for the objection letter. Recorded comparable deals are public but effectively unreachable, so people accept a bank number or a municipal bill they could have challenged. Do NOT use for purchase tax or betterment tax (mas rechisha, mas shevach), Tabu extracts, rental agreements, mortgage track comparison, or land tenders."
+  },
+  {
+    "slug": "israeli-public-transit",
+    "category": "government-services",
+    "flag": "Si",
+    "description": "Israeli public transit routing, schedules, and real-time arrivals for bus, train, and light rail. Use when user asks about Israeli buses, trains, \"autobus\", \"rakevet\", light rail, \"rav-kav\", transit routes, timetables, \"kavim\", Egged, Dan, Metropoline, or any Israeli public transportation query. Supports multi-modal journey planning, real-time arrivals, and fare estimation. Enhances routes-israel MCP server with operator knowledge and Hebrew localization. Do NOT use for taxi/ride-sharing or non-Israeli transit systems."
+  },
+  {
+    "slug": "israeli-real-estate",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Not legal advice. Israeli real estate data, comparable-sales analysis, transaction guidance, and regulatory compliance. Use when user asks about Israeli property, \"nadlan\", \"dira\", apartment prices, purchase tax (mas rechisha), Tabu extract, rental agreements, mortgage (mashkanta), or Israel Land Authority tenders. Covers buying, selling, and renting in Israel. Do NOT use for non-Israeli real estate markets, and do NOT use to decode a Tabu extract entry by entry (use israeli-tabu-extract-decoder for what each ownership share, mortgage rank, ikul, he'arat azhara, easement and hatzmada actually means)."
+  },
+  {
+    "slug": "israeli-receipt-scanner",
+    "category": "accounting",
+    "flag": "-",
+    "description": "OCR and parse Israeli receipts and invoices with Hebrew and English text extraction. Extracts merchant name, date, total amount in NIS, VAT amount, receipt or invoice number, payment method, and VAT registration number (osek murshe). Handles common Israeli retail formats including supermarkets, gas stations, restaurants, and online purchases. Auto-categorizes expenses into standard Israeli accounting categories and outputs structured JSON or CSV ready for import into accounting software. Use when you need to digitize, extract data from, or categorize Israeli receipts and tax invoices. Do NOT use for non-Israeli receipt formats, handwritten notes without printed text, or bank statement reconciliation."
+  },
+  {
+    "slug": "israeli-relocation-abroad",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "End-to-end guide for Israelis relocating abroad for work (רילוקיישן), covering before, during, and after the move plus return planning. Use when user asks about Israeli relocation, moving abroad from Israel, yom nituk toshavut, Israeli tax residency while abroad, Bituach Leumi from abroad, kupat cholim during relocation, toshav chozer (returning resident) benefits, vehicle import on return, or apostille for Israeli documents. Covers Israeli tax residency tests (Form 1348), Bituach Leumi continuity, kupat cholim, pension funds and keren hishtalmut, Israeli apartment rental vs sale, apostille via the Foreign Ministry, and the 10-year tax exemption for toshav chozer vatik. Prevents costly mistakes like losing kupat cholim on return, paying double Bituach Leumi, or missing returning-resident benefits. Do NOT use for aliyah to Israel (use israeli-aliyah-navigator), tourist visas, binding tax advice, or destination-country immigration like H-1B or UK Skilled Worker visas."
+  },
+  {
+    "slug": "israeli-renovation-scope-builder",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Builds a written scope of work and engagement terms for an Israeli home renovation, for a homeowner commissioning a shiputz or a tradesperson issuing terms. Produces an itemised scope with exclusions, milestone payments with retention, per trade warranty periods, agreed delay compensation, lawful working hours, and a handover checklist. Use when a user asks what to put in writing before a renovation, how to split payments to a kablan or shiputznik, what warranty to demand, or whether the job needs a permit. It matters because a renovation is a chozeh kablanut, which carries no warranty schedule of its own, so whatever the contract omits falls to weak defaults. Do NOT use for defects in a new apartment from a developer (that is israeli-home-defect-report), for building on your own land, for freelance or employment contracts, to price a quote, to sue a contractor, or to complain about a neighbour's renovation noise."
+  },
+  {
+    "slug": "israeli-rental-agreements",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Guide users through Israeli rental agreements, tenant and landlord rights, and lease negotiation. Use when user asks about rental contracts (chozeh schirut), tenant rights, landlord obligations, deposits (arancia), rent increases, index-linked rent (hatzmada la'madad), the Fair Rental Law 2017, eviction procedures, or common red flags in Israeli leases. Covers essential contract elements, guarantees, dispute resolution, and the Tenant Protection Law. Do NOT use for commercial leases, property purchase transactions, or mortgage advice."
+  },
+  {
+    "slug": "israeli-restaurant-ops",
+    "category": "food-and-dining",
+    "flag": "-",
+    "description": "Help Israeli restaurant owners optimize menus, pricing, and daily operations for delivery platforms. Use when user asks about \"restaurant management Israel\", \"Wolt commission\", \"10bis pricing\", \"Mishlocha\", \"menu optimization\", \"food cost analysis\", \"delivery commission\", \"review response\", or \"ניהול מסעדה\". Covers menu copy optimization, pricing strategy with commission awareness, review response drafting, platform comparison, food cost analysis, and daily operations. Do NOT use for cooking recipes, personal meal planning, or non-Israeli delivery platforms."
+  },
+  {
+    "slug": "israeli-returning-resident-customs-vehicle",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Customs and vehicle-import planner for Israelis returning home (תושב חוזר / toshav chozer). Use when a user asks about \"מכס לתושב חוזר\", \"יבוא רכב לתושב חוזר\", \"כמה משלוחים מותר\", \"חלון 9 חודשים\", \"כמה טלוויזיות מותר\", \"כדאי לייבא את הרכב\", the 6-year hold on duty-free items, the 48-months-from-manufacture vehicle window, the customs file (תיק זכאות במכס), or how returnee customs differ from olim. Disambiguates returnees from olim (returnees get 2 shipments and 1 unit per appliance type, NOT the oleh 3-shipment basket) and warns there is no purchase-tax exemption on vehicles, only an extended age window. Do NOT use for the process navigator (use israeli-returning-resident-navigator), Section 14 tax math (use israeli-toshav-chozer-vatik-tax-planner), oleh chadash customs (use israeli-aliyah-customs-shipment-planner), people LEAVING Israel (use israeli-relocation-abroad), or binding advice (refer to a licensed customs broker / סוכן מכס)."
+  },
+  {
+    "slug": "israeli-returning-resident-navigator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Process navigator for Israelis returning home (תושב חוזר / toshav chozer) after years abroad. Use when a user asks about coming back to Israel after working overseas, \"חזרתי לארץ\", \"אני תושב חוזר\", \"ביטוח לאומי לתושב חוזר\", \"האם אני תושב חוזר ותיק\", restoring kupat cholim, Form 628, reactivating an Israeli driver's license, the toshav-chozer certificate from Misrad HaAliyah V'HaKlita, or the order of operations in the first 90 days back. Disambiguates the three independent eligibility tracks (Misrad HaAliyah 2-year threshold, Mas Hachnasa 6-year regular / 10-year vatik, Bituach Leumi center-of-life via Form 628). Do NOT use for new immigrants (olim chadashim, use israeli-aliyah-navigator), Israelis leaving Israel (use israeli-relocation-abroad), Section 14 tax math or Form 1348 drafting (use israeli-toshav-chozer-vatik-tax-planner), vehicle import or household-shipment customs (use israeli-returning-resident-customs-vehicle), or binding tax / legal advice."
+  },
+  {
+    "slug": "israeli-scam-detector",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Not legal advice and not a security guarantee. Check whether a suspicious Israeli SMS, email, link or phone call is a scam, and get the exact next steps, including after the money is already gone. Covers smishing and phishing impersonating Israeli banks, Bituach Leumi, Rashut HaMisim, Israel Post and gov.il, SIM-swap takeover, and the 2026 wave of AI voice-cloning and deepfake fraud. Explains the real deadlines under the Payment Services Law 2019 (the Debit Cards Law it replaced is repealed), the 8-business-day refund clock, and the 24/7 human bank fraud line that owes customers aged 70 or over queue priority, and where Russian-language service is an expectation the regulator voiced rather than a duty. Use when a user asks whether a message or link is real, got a suspicious call, thinks they were scammed, or wants to protect an elderly or Russian-speaking relative. Do NOT use for malware removal, corporate incident response, or to declare a specific message safe."
+  },
+  {
+    "slug": "israeli-shelter-guide",
+    "category": "security-compliance",
+    "flag": "Si",
+    "description": "Guide to finding and preparing shelters in Israel including mamad (apartment safe room), mamak (floor safe room), maman (institutional safe room), and miklat (public shelter). Use when a user needs to find the nearest shelter, prepare a safe room per Home Front Command guidelines, understand time-to-shelter by region, set up workplace emergency procedures, or interpret the multi-stage early-warning notifications introduced for ballistic threats. Covers the civil-defence construction specifications and what Israeli Standard 4422 actually governs, time-to-shelter zones (immediate / 15 / 30 / 45 / 60 / 90 seconds), municipal shelter databases, accessibility law, sheltering with pets, vehicle protocols, and what to do if caught outdoors. Do NOT use for real-time alert integrations (use pikud-haoref-alerts) or per-threat safety protocols (use pikud-haoref-safety-protocols)."
+  },
+  {
+    "slug": "israeli-shipping-manager",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Build and manage shipping integrations with Israeli carriers, including Israel Post, Cheetah, HFD, Mahir Li, GetPackage, and UPS Israel, plus locker pickup services (Shlager, Done, UPS lockers). Use when user asks about \"shipping Israel\", \"Cheetah delivery\", \"meshloach\", \"shipping label\", \"HFD\", \"locker pickup Israel\", \"tawit mishloach\", \"GetPackage\", \"UPS lockers Israel\", or setting up carrier integrations for an e-commerce store. Covers carrier selection, Israeli address formatting, label generation, cross-carrier tracking system setup, customer delivery notifications, and 14-day consumer-protection returns. Do NOT use for looking up a specific package tracking status (direct the user to the carrier site, Israel Post at doar.israelpost.co.il or HFD at hfd.co.il). Do NOT use for international shipping outside Israel or customs/import (see israeli-customs-duty-calculator for the personal-import USD 75 VAT threshold)."
+  },
+  {
+    "slug": "israeli-small-claims-court",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Guide users through filing and navigating Israeli small claims court (tvi'ot ktanot). Use when user asks about small claims procedures, filing a lawsuit for consumer disputes, landlord-tenant claims, service complaints, court forms, filing fees, or self-representation in Israeli courts. Covers claim limits (NIS 39,900), the filing process via gov.il, evidence preparation, hearing procedures, judgments, and enforcement through the execution office (Hotza'a LaPo'al). Do NOT use for criminal matters, family law, or claims exceeding the small claims limit."
+  },
+  {
+    "slug": "israeli-smart-saver",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Not legal advice. Save money in Israel through smart shopping, cashback optimization, subscription auditing, and deal hunting. Covers Zap.co.il price comparison, BuyMe gift cards, Cashback.co.il and Cashdo rebates, credit card perks (Cal, Max, Isracard), cellular plan switching to budget carriers and promo-price comparison between carriers, promo expiry, subscription cancellation rights, and seasonal sales. Use when user asks about \"lachsoch kesef\", saving money in Israel, Israeli coupons, cashback, \"hashvaat mechirim\", subscription audit, \"kamah ani meshalem\", credit card benefits, \"hotza'ot\", reducing expenses, or smart shopping tips. Helps cut monthly spending by finding unneeded subscriptions, cheaper alternatives and cashback. Do NOT use for pension, savings-fund or investment questions, mortgage comparison (use israeli-mortgage-comparator), grocery price comparison (use israeli-grocery-price-intelligence), or a specific store coupon code (use israeli-coupon-code-finder)."
+  },
+  {
+    "slug": "israeli-sms-gateway",
+    "category": "communication",
+    "flag": "Sx",
+    "description": "Integrate with Israeli SMS gateway providers for business messaging, OTP, and notifications. Use when user asks about sending SMS in Israel, Israeli SMS providers, phone number validation (Israeli format), Hebrew SMS segment cost, OTP implementation, bulk SMS, sender ID rules, or SMS marketing compliance. Covers 019 SMS, InforUMobile, SMS4Free, and international providers with Israeli support. Do NOT use for WhatsApp Business API (see separate skill) or non-Israeli telecom."
+  },
+  {
+    "slug": "israeli-social-content",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Create social media content optimized for Israeli audiences across Facebook, Instagram, TikTok, and LinkedIn. Use when user asks about Israeli social media strategy, Hebrew social posts, posting schedules for Israel, Hebrew hashtags, or Israeli Facebook group marketing. Covers platform-specific best practices, Israeli cultural references, and Hebrew copywriting for social. Do NOT use for paid ad campaigns, influencer outreach, or SEO content writing."
+  },
+  {
+    "slug": "israeli-special-education-dossier",
+    "category": "education",
+    "flag": "Sc",
+    "description": "Not legal advice, not a psychological or medical diagnosis, and not a substitute for the professional opinions the committee requires. Prepares an Israeli parent for a special education entitlement and characterization committee (vaadat zakaut ve-ipyun): works out which body decides, which professional's diagnosis is admissible for the disability in question, what the committee must give you before the hearing, a written parent position paper, and the appeal clock. Use when a parent asks about vaadat zakaut ve-ipyun, a special education committee, a sal ishi personal basket, a function level, choosing between a regular class and a special education setting, or challenging a committee decision. Do NOT use for bagrut exam accommodations, Bituach Leumi disabled child allowance, or which specific school a child is assigned to."
+  },
+  {
+    "slug": "israeli-spreadsheets",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Generate Excel and Google Sheets spreadsheets with Israeli tax calculations, VAT, NIS formatting, RTL setup, and Hebrew-labeled financial templates. Use when user asks about Israeli tax spreadsheets, NIS-formatted Excel files, VAT calculations, salary slip templates, arnona estimators, common Hebrew formulas, or Israeli accounting worksheets. Covers 2026 tax brackets (after the 2026 bracket widening), Bituach Leumi rates, and openpyxl RTL configuration. Do not use for filing actual tax returns, legal tax advice, or generic spreadsheets without an Israeli context."
+  },
+  {
+    "slug": "israeli-standards-import-checker",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Not legal advice and not a filed customs declaration. Check whether a product needs Standards Institution of Israel (SII, Mechon HaTikanim) approval under an official standard (takan rishmi) before import, and which parallel permits gate the same shipment. Returns SI numbers, the import group (1-4), the approval route (type approval, shipment approval, Maslol Plus, EU recognition under Amendment 19, and the US route under Amendment 21 passed July 2026), lab tests and timelines. Also covers the Free Import Order lookup, Ministry of Communications certificates for wireless devices, electronic-waste and packaging registration, the personal-import (yevu ishi) exemption and its limits, Hebrew labelling and Shaar Olami filing. Use when a user asks about importing electronics, chargers, toys, cosmetics or building materials into Israel, commercially or by personal import, asks about CE or type approval, or has a shipment stuck at customs. Do NOT use for duty calculation."
+  },
+  {
+    "slug": "israeli-startup-investment-analyzer",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Generate a structured investment memo for an Israeli startup deal: market, team, metrics sanity-check, valuation and dilution math, key risks, and a prioritized list of diligence questions. Built for angel and VC investors evaluating an inbound deck or data room. Catches Israel-specific landmines a generic analysis misses: Innovation Authority (rashut hachadshanut) grant overhang and IP-out restrictions, the Delaware flip, Section 102 option plans, founder vesting, and Companies Registrar standing. Use when an investor asks to evaluate a startup, screen a deal, review a pitch deck, write an investment memo, run dilution math, or list diligence questions. Why it matters: an Innovation Authority royalty or IP-out overhang can shrink or block an exit. Do NOT use for founder-side company formation or fundraising (israeli-startup-toolkit), employee option taxation (israeli-stock-options-tax), or public-market TASE stock analysis (tase-stock-analysis)."
+  },
+  {
+    "slug": "israeli-startup-toolkit",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Not legal advice and not tax advice. Guide Israeli startup operations including company formation, Innovation Authority grants, investment agreements, R&D tax benefits, and employee stock options (Option 102). Use when user asks about starting a company in Israel, IIA grants, \"Innovation Authority\", SAFE agreements (Israeli), convertible notes, Option 102, employee stock options in Israel, R&D tax benefits, preferred enterprise, Yozma 2.0, Delaware flip, or Israeli startup legal/financial setup. Do NOT use for non-Israeli company formation or international tax advice. Always recommend consulting with Israeli lawyer and accountant for binding decisions."
+  },
+  {
+    "slug": "israeli-statistics",
+    "category": "government-services",
+    "flag": "Si",
+    "description": "Access Israeli Central Bureau of Statistics (CBS) data including CPI, housing price indices, economic indicators, and demographic data. Use when user asks about Israeli statistics, \"hamadad\", CPI, consumer price index, housing prices, \"madad mchirei dirot\", GDP, unemployment, population data, CBS data, \"halishka hamerkazit listatistika\", producer prices, building starts, or any Israeli economic/demographic statistics. Enhances the israel-statistics MCP server with index interpretation and economic context. Do NOT use for non-Israeli statistics or financial forecasting."
+  },
+  {
+    "slug": "israeli-stock-options-tax",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Calculate tax on stock options and RSUs for Israeli tech employees under Section 102. Use when user asks about option exercise tax, RSU taxation, startup exit proceeds, Section 102 tracks, trustee holding period, capital gains vs income track comparison, or 'how much tax on my options'. Walks through a detailed tax breakdown with net proceeds. Do NOT use for crypto tax (use israeli-crypto-tax-reporter), ESOP plan setup (use israeli-startup-toolkit), controlling shareholder profit extraction (use israeli-corporate-tax-strategy), annual tax returns (use israeli-tax-returns), or payroll (use israeli-payroll-calculator)."
+  },
+  {
+    "slug": "israeli-survivor-benefits-navigator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Not a National Insurance decision. Ties together every benefit a death triggers in Israel: assesses who is eligible for the Bituach Leumi survivor's allowance, estimates the monthly amount from the current rate table, and maps each benefit to its exact form and institution. Use when someone died and the family needs to know what to claim from Bituach Leumi, the pension fund, and insurance. Do NOT use for burial logistics, closing accounts, or asset transfer (estate settlement), for writing a will or getting a succession order, or for general non-death Bituach Leumi questions (use israeli-bituach-leumi)."
+  },
+  {
+    "slug": "israeli-tabu-extract-decoder",
+    "category": "legal-tech",
+    "flag": "-",
+    "description": "Not legal advice. Reads an Israeli nesach tabu (land registry extract) and explains it line by line: who is registered and in what share, what each mortgage, attachment, caveat, note, easement and attachment of common property actually means, and which findings normally warrant a lawyer before signing. Also works out whether the property is even in the register, since a large share of Israeli homes are held through other regimes. Use when a user pastes or describes a nesach, asks what an he'arat azhara or an ikul on it means, asks why the registered area differs from the advertised one, or cannot find their apartment in the register at all. It matters because an extract is conclusive evidence only for settled land. Do NOT use to value a property, for purchase tax or transaction guidance, or to advise whether title is good or whether to buy."
+  },
+  {
+    "slug": "israeli-tax-returns",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Prepare and file Israeli tax returns with Reshut HaMisim. Covers Form 1301 (individual), Form 1214 (corporate), Form 126 (employer salary), Form 856 (supplier payments), Form 6111 (financial statements), mikdamot (advance payments), Mas Shevach (real estate capital gains), and securities capital gains (Forms 1322/1325). Use when user asks about \"doch shnati\", \"tax return Israel\", \"Form 1301\", \"Form 1214\", \"mas hachnasa\", \"mikdamot\", \"mas shevach declaration\", \"capital gains report\", \"nekudot zikui\", \"mas yesafim\", or \"דוח שנתי\". Guides income classification, deductions, tax credits, surtax, deadlines, and SHAAM submission. Do NOT use for VAT reporting (use israeli-vat-reporting), withholding tax (use israeli-tax-withholding), crypto tax (use israeli-crypto-tax-reporter), payroll (use israeli-payroll-calculator), invoicing (use israeli-e-invoice), or Section 102 employee stock options (use israeli-stock-options-tax)."
+  },
+  {
+    "slug": "israeli-tax-withholding",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Israeli tax withholding (nikui mas bemakor) rates, certificates, and calculations. Use when user asks about withholding tax, \"nikui mas\", withholding certificates, \"ishur nikui\", tax coordination (tium mas), or needs to calculate withholding amounts. Covers payments to suppliers, freelancers, landlords, and cross-border payments. Do NOT use for employee payroll tax (see israeli-payroll-calculator) or VAT reporting."
+  },
+  {
+    "slug": "israeli-teacher-payroll",
+    "category": "accounting",
+    "flag": "Sc",
+    "description": "Computes and explains the salary of Israeli teachers (ovdei horaa / sachar ovdei horaa) under the two collective-agreement reforms: Ofek Chadash (ofek chadash, New Horizon, covering kindergartens, elementary, and junior-high) and Oz LaTmura (oz latmura, upper-secondary only). Use when a user asks how a teacher's pay is built: reform, rank (daraga), seniority (vetek), the weekly work-week split between front-of-class hours and private (pratani) hours, gmul (gmul) increments like gmul hishtalmut or gmul chinuch, and how gross becomes net. Also handles the split appointment, where one teacher teaches in both a junior-high and a high school and earns under both reforms at once, each part by its position fraction. Do NOT use for standard private-sector gross-to-net payroll (use israeli-payroll-calculator), bookkeeping journal entries (use israeli-bookkeeping-automation), or Bagrut and school-system navigation (use israeli-education-system)."
+  },
+  {
+    "slug": "israeli-tech-interview-prep",
+    "category": "education",
+    "flag": "Sx",
+    "description": "Prepare for technical interviews at Israeli tech companies with company-specific processes, question patterns, and Hebrew technical vocabulary. Use when getting ready for interviews at Israeli startups, enterprises, or multinational R&D centers, practicing system design questions relevant to Israeli tech products, or learning Hebrew terms used in technical discussions. Covers interview rounds, coding challenges, behavioral questions, and company culture expectations. Do NOT use for non-technical roles, academic interviews, or interviews at companies outside Israel."
+  },
+  {
+    "slug": "israeli-tech-salary-negotiator",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Not tax advice and not a filed return. Benchmark tech salaries in the Israeli market and craft data-driven negotiation strategies. Use when preparing for a salary negotiation, evaluating a job offer, or comparing total compensation packages at Israeli tech companies (startups, enterprises, multinational R&D centers). Covers base salary ranges by role and seniority, equity and options valuation, Israeli benefits analysis (pension, keren hishtalmut, car allowance, vacation), and counter-offer scripting with market data. Do NOT use for non-tech roles, freelance rate setting, or salary negotiations outside Israel."
+  },
+  {
+    "slug": "israeli-telecom-comparator",
+    "category": "communication",
+    "flag": "-",
+    "description": "Compare cellular plans, internet packages, TV bundles, and triple deals across all Israeli telecom providers including Partner, Cellcom, Pelephone, HOT, Golan Telecom, Bezeq, Yes, and MVNOs. Use when a user needs to find the best telecom deal, switch carriers, compare 5G or fiber plans, evaluate family packages, or understand number portability in Israel. Covers eSIM support, contract vs. no-contract options, international roaming, and negotiation tips. Do NOT use for enterprise or business-grade telecom solutions, VoIP/SIP trunk setup, or network infrastructure engineering."
+  },
+  {
+    "slug": "israeli-telegram-business-bot",
+    "category": "communication",
+    "flag": "-",
+    "description": "Set up Telegram bots for Israeli small businesses with appointment booking, order management, FAQ auto-replies in Hebrew, business hours awareness (Sunday-Thursday), payment links, and customer notifications. Use when an Israeli business owner asks about creating a Telegram bot, automating customer replies, taking orders via Telegram, or scheduling appointments through a bot. Helps non-technical users deploy a working business bot without writing code, reducing missed customer messages and manual response overhead. Do NOT use for WhatsApp Business (use israeli-whatsapp-business), building bots from code (use telegram-bot-builder), voice bots (use hebrew-voice-bot-builder), or general support ticket routing (use israeli-customer-support-automator)."
+  },
+  {
+    "slug": "israeli-tender-proposal-builder",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Builds a complete Hebrew proposal package for Israeli government and public sector tenders (michrazim). Parses the tender document, extracts threshold conditions, produces a compliance checklist, and drafts every proposal section per Chok Chovat HaMichrazim 5752-1992 and Takanot 5753-1993 (declarations, past experience table, pricing worksheet). Use when responding to an open tender (michraz pumbi), closed (sagur), framework (misgeret), or a local authority tender, and when researching historical procurement contracts via BudgetKey or IL Budget MCP to benchmark pricing. Prevents disqualification on technical defects. Do NOT use for Israeli Land Authority (RMI) land allocation tenders (use israeli-land-tenders), for challenging a tender committee decision (disqualification or award) by administrative petition, or for private commercial RFPs not subject to the Mandatory Tenders Law."
+  },
+  {
+    "slug": "israeli-toshav-chozer-vatik-tax-planner",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Not tax advice and not a filed return. Plans Section 14 tax exemption for an Israeli toshav chozer vatik (10+ years abroad). Distinguishes vatik (full 10-year foreign-income exemption) from regular toshav chozer (5-year passive + 10-year capital gains only), pins the 10-year clock to the tax-residency date (not arrival), surfaces the 2026 reporting change (Amendment 272 cancels 134b + 135(1)(b); tax stays exempt, reporting required for residents from 1.1.2026), flags the US-citizen dual-tax trap, and outputs a 10-year cash-flow projection. Triggers on \"תושב חוזר ותיק\", \"סעיף 14\", \"פטור 10 שנים\", \"תיקון 272\". Do NOT use for the returning-resident process (use israeli-returning-resident-navigator), vehicle/customs (use israeli-returning-resident-customs-vehicle), olim chadashim (use israeli-aliyah-navigator), or people leaving Israel (use israeli-relocation-abroad). Planning aid only."
+  },
+  {
+    "slug": "israeli-trapped-profits-planner",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Not tax advice. Computes a closely-held Israeli company's exposure under the two Amendment 277 regimes: the Section 81B 2% addition to tax on undistributed excess profits, and Section 62A attribution of company income to an active shareholder. Works out excess profits, tests all three shields and takes the highest, checks the three statutory escapes on their correct and different bases (6% of accumulated profits, 50% of excess profits, the 10% loss test), applies the transitional 20% route and the protection bands earned in 2025, and names the reporting vehicle (Form 1214 with Annex 2B). Use when a chevrat me'atim has retained earnings and you need its 2% exposure, are deciding how much to distribute before year end, or are testing Section 62A wallet-company classification. Do NOT use for comparing profit-extraction methods (use israeli-corporate-tax-strategy) or for filing the annual return (use israeli-tax-returns)."
+  },
+  {
+    "slug": "israeli-travel-planner",
+    "category": "travel",
+    "flag": "Sc",
+    "description": "Plan domestic travel in Israel with local transportation, accommodations, national parks, and cultural considerations. Use when user asks about traveling in Israel, Israeli hotel chains, bus routes, Israel Railways, Rav-Kav card, national parks, tiyul b'aretz, Dead Sea, Eilat, or trip planning within Israel. Covers Egged/Dan/Kavim buses, train schedules, Rashut HaTeva sites, Shabbat travel restrictions, and seasonal advice."
+  },
+  {
+    "slug": "israeli-ui-design-system",
+    "category": "localization",
+    "flag": "-",
+    "description": "Build RTL-first UI component libraries and design systems for Israeli applications with Hebrew typography. Use when user asks about Hebrew UI components, \"itzuv\" (design), Israeli design system, Hebrew font pairing, RTL component library, \"tipografia ivrit\" (Hebrew typography), or gov.il design patterns. Covers RTL-first component architecture, Hebrew font pairings (Heebo+Inter, Rubik+Source Sans 3), gov.il design system patterns, Israeli formatting conventions (shekel sign, day-first dates, 24-hour clock), and culturally appropriate UI for Israeli users. Do NOT use for general RTL CSS (use hebrew-rtl-best-practices) or accessibility audits (use israeli-accessibility-compliance instead)."
+  },
+  {
+    "slug": "israeli-unemployment-benefits-navigator",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "Walk a user through Israeli dmei avtala (דמי אבטלה / unemployment benefits) end to end: check eligibility under the 12-of-18 month qualifying period (tkufat akhshara; the 6-of-18 chal\"t variant applied only inside the Shaagat HaAri window, which closed 14.5.2026), calculate the 2026 progressive benefit, map max days by age and dependents (50 to 300), warn about the 90-day resignation wait, surface stackable benefits (hashlamat hachnasa, hachshara miktzoit, severance interaction), and generate a Sherut HaTaasuka and Bituach Leumi application checklist. Use when a user asks about dmei avtala, eligibility, how much avtala they will get, how to apply, was laid off, fired, or placed on chal\"t in Israel. Do NOT use for other Bituach Leumi programs (israeli-bituach-leumi), net salary (israeli-payroll-calculator), reservist pay (israeli-miluim-manager), aliyah benefits (israeli-aliyah-navigator), or employment contract review."
+  },
+  {
+    "slug": "israeli-urban-renewal-owner-guide",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Explains Israeli urban renewal (hitchadshut ironit) from the apartment owner's side: the two tracks, pinui-binui and the strengthening track, the statutory majorities and how they differ by track and by building size, the seven grounds on which refusing to sign counts as reasonable, what the law requires the transaction itself to contain, and the free statutory ombudsman who investigates pressure to sign. Use when an owner says \"pinui binui\", \"tama 38\", \"hitchadshut ironit\", \"the developer's lawyer wants me to sign\", or asks what the neighbours can force on them. It matters because the thresholds are widely misreported and the owner protections did not lapse when TAMA 38 stopped taking new permit applications. Do NOT use for a renter rather than an owner, to review the user's own signed agreement, to value an apartment or say what compensation is owed, or for construction defects in a finished apartment."
+  },
+  {
+    "slug": "israeli-utility-rates-comparator",
+    "category": "tax-and-finance",
+    "flag": "-",
+    "description": "Compare electricity providers, water tariffs, cooking-gas (LPG) rates, cellular plans, fiber internet packages, and arnona (municipal property tax) across Israeli municipalities and utility companies. Use when a user needs to understand IEC tariff structures, calculate solar panel ROI, compare tiered water pricing, pick a cheap cellular plan, switch to fiber internet, or evaluate arnona differences between cities. Covers electricity market deregulation, independent power producers, Mekorot water pricing, cellular operators and MVNOs, fiber-optic infrastructure, and municipal rate variations. Do NOT use for commercial/industrial utility contracts at scale, or utility infrastructure investment analysis."
+  },
+  {
+    "slug": "israeli-vat-reporting",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Prepare, validate, and guide submission of Israeli VAT reports (Doch Maam) per Tax Authority standards. Use when user asks about VAT reporting, VAT calculation, \"doch maam\", \"maam\", Israeli VAT filing, VAT deadlines, or input/output VAT reconciliation. Supports monthly, bi-monthly, and annual reporting. Handles zero-rated exports and exempt transactions. Do NOT use for income tax, corporate tax, non-Israeli VAT systems, or bookkeeping statements such as profit and loss, balance sheet or trial balance (use israeli-financial-reports)."
+  },
+  {
+    "slug": "israeli-vehicle-manager",
+    "category": "government-services",
+    "flag": "Sc",
+    "description": "General information only. Not legal advice and not a vehicle appraisal. Manage vehicle ownership in Israel: annual test (test/טסט), registration renewal (chidush rishayon rechev), used car purchase checks, insurance requirements, and transfer of ownership. Use when a user asks about their vehicle test date, how to renew their car registration, what to check before buying a used car in Israel, or understanding Israeli car insurance types. Prevents costly surprises like failed tests, expired registrations, and liens on purchased vehicles."
+  },
+  {
+    "slug": "israeli-war-damage-claims",
+    "category": "government-services",
+    "flag": "-",
+    "description": "Guide users through filing DIRECT property damage claims from rocket attacks and hostilities in Israel (Iron Swords and Shaagat HaAri 2026): documenting damage, filing with the Tax Authority Compensation Fund, home contents insurance, assessor visits, appeals. Use when user asks about physical property damage from war, rockets, missiles, 'nezek yashir', 'mas rechush', 'keren pitzuim', war damage claim, damaged apartment, broken windows from blast, or compensation for hostility damage. Covers fast track (up to NIS 30,000), regular track, optional contents insurance, and appeals (va'adot erar). Do NOT use for indirect/economic business damage like turnover decline or wage grants (use israeli-business-war-compensation), employee unpaid-leave dmei avtala (use israeli-unemployment-benefits-navigator), personal injury (israeli-bituach-leumi), ordinary road-accident car damage (private insurance), or general home insurance (israeli-insurance-comparator)."
+  },
+  {
+    "slug": "israeli-wedding-planner",
+    "category": "localization",
+    "flag": "-",
+    "description": "Plan an Israeli wedding from engagement to chuppah, covering venue selection (ulmot, ganot aruim), vendor comparison via Israeli platforms (Celebrate, Engaged, Save A Date, Walla Wedding), budget planning (~120-180K NIS typical in 2026), Rabbinate registration (tik nisuin, teudat ravakut), halachic requirements (mikveh, ketuba), Cyprus and Utah online civil-marriage alternatives recognized by Israel, guest management, per-plate cost optimization, seasonal pricing, and timeline creation. Use when user asks about \"chatuna b'yisrael\", Israeli wedding planning, wedding budget, \"ulam aruim\", \"ulmot\", \"ganim\", wedding vendors, Rabbinate requirements, \"tik nisuin\", ketuba, civil marriage Cyprus, Utah online marriage, or wedding timeline. Prevents common mistakes like missing Rabbinate deadlines, overpaying on Thursday weddings, or forgetting AKUM fees. Do NOT use for non-Jewish religious ceremonies inside Israel, or divorce proceedings."
+  },
+  {
+    "slug": "israeli-whatsapp-business",
+    "category": "communication",
+    "flag": "Sx",
+    "description": "Integrate WhatsApp Business API for the Israeli market with Hebrew message templates, customer communication, and CRM integration. Use when user asks about WhatsApp Business in Israel, Hebrew WhatsApp templates, WhatsApp marketing to Israeli customers, business messaging via WhatsApp, or integrating WhatsApp with Israeli CRM tools (Monday.com, Priority, etc.). Covers Cloud API setup, template creation, per-message pricing, compliance with Israeli anti-spam law and Privacy Law Amendment 13, and Israeli consumer communication preferences. Do NOT use for personal WhatsApp or non-Israeli WhatsApp markets."
+  },
+  {
+    "slug": "israeli-wills-inheritance",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Not legal advice. Draft an Israeli will in the form the Succession Law 1965 requires and navigate the inheritance process. Drafts a witnessed will (צוואה בעדים), which Israeli law does not require a lawyer for (one is still recommended): the testator writes the wishes, dates and signs, and two witnesses (who may not be beneficiaries or their spouses) sign. Explains the four will types, depositing the will with the Registrar, and obtaining a succession order (צו ירושה, when there is no will) or a probate order (צו קיום צוואה, when there is a will). Use when a user asks to \"write a will\", \"deposit my will\", \"get a succession order\", \"my parent died without a will\", \"צוואה\", \"צו ירושה\", or \"צו קיום צוואה\". Prevents common self-made-will mistakes. Do NOT use for binding enduring power of attorney (ייפוי כוח מתמשך needs a certified attorney, see israeli-elder-care-navigator), guardianship, contested-estate litigation between heirs (use a lawyer), or formal legal advice on complex estates."
+  },
+  {
+    "slug": "israeli-workout-coach",
+    "category": "health-services",
+    "flag": "Sc",
+    "description": "Not medical advice, physiotherapy, or dietetic therapy. Hebrew-first personal-training coach that remembers your program and history across sessions. Onboards any split (PPL, upper-lower, full-body, or custom) into an editable profile, then works as five roles: next-workout coach with a home variant, free-Hebrew-text logger, nutrition framer that hands specifics to israeli-nutrition-planner, analyst that trends estimated 1RM, volume, run pace and RPE creep to catch plateaus and overtraining, and controlled routine-breaker. Use when the user says \"מה האימון שלי היום\", \"תרשום לי את האימון\", \"בנץ' 4 על 80\", \"תראה לי התקדמות\", \"פלאטו\", \"next workout\", \"log my workout\", or \"am I overtraining\". Includes Israeli-summer heat rules, a health screen, and a disordered-eating guardrail. Do NOT use for clinical rehab, medical dietary therapy, meal planning, or as a substitute for a certified trainer or a licensed physiotherapist or dietitian."
+  },
+  {
+    "slug": "israeli-workplace-rights-navigator",
+    "category": "legal-tech",
+    "flag": "Sc",
+    "description": "Understand and exercise employee rights under Israeli labor law, including vacation days (chofsha), sick leave (machala), overtime pay, the Birth and Parenting Period and paternity leave, severance pay (pitzuyim), convalescence pay (dmei havra'a), minimum wage, and pension contributions. Use when user asks about \"employee rights in Israel\", \"how many vacation days\", \"sick pay Israel\", \"pitzuyei piturim\", \"dmei havra'a\", \"minimum wage Israel\", \"shaat nosafot\", or \"zchuyot ovdim\". Covers Annual Leave Law, Sick Pay Law, Hours of Work and Rest Law, Employment of Women Law, Severance Pay Law, and Minimum Wage Law. Do NOT use for drafting an employment contract (use israeli-employment-contracts), reviewing or auditing an existing employment contract (use israeli-employment-contract-reviewer), salary negotiation (use israeli-tech-salary-negotiator), reserve duty rights (use israeli-miluim-manager), or freelancer operations (use israeli-freelancer-ops)."
+  },
+  {
+    "slug": "jfrog-devops",
+    "category": "developer-tools",
+    "flag": "Sx",
+    "description": "Manage JFrog Artifactory repositories, artifacts, Docker registry, build info, ML model registry (JFrog ML / AI Catalog), and Xray security scanning for DevOps and MLOps workflows. Use when user asks about JFrog, Artifactory, Xray, Curation, Frogbot, JFrog ML, AI Catalog, artifact management, \"deploy artifact\", Docker registry with Artifactory, Hugging Face / MLflow model registry, build promotion, vulnerability scanning, SBOM (SPDX/CycloneDX/VEX), or DevOps artifact pipeline. Covers REST API operations, JFrog CLI usage, Docker registry configuration, OIDC with GitHub Actions, and security scanning patterns. Do NOT use for general Docker or CI/CD questions unrelated to JFrog."
+  },
+  {
+    "slug": "make-com-israeli-automations",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Build and configure Make.com scenarios for Israeli business processes, including Morning (formerly Green Invoice) sync, iCount accounting, Monday.com board automation, Priority ERP data exports, WhatsApp Business Hebrew messaging, and payment gateways (Cardcom, Tranzila, Grow, Bit). Covers Make.com AI Agents, the Make.com MCP server for exposing scenarios as agent tools, Israel 2026 Invoice Reform (allocation numbers with a step-down threshold), community modules for Israeli apps, Hebrew data transformations, Data Store for VAT period tracking, and Shabbat-aware scheduling via the Hebcal community module. Use when user asks to \"create a Make.com scenario\", \"build an automation for Israeli billing\", \"automate Morning / Green Invoice\", \"connect Israeli apps in Make.com\", \"set up AI agent in Make.com\", or \"expose a Make.com scenario as an MCP tool\". Do NOT use for n8n workflows (use n8n-hebrew-workflows), Zapier Zaps (use zapier-israeli-integrations), or custom code automation without Make.com."
+  },
+  {
+    "slug": "making-aliyah-first-90-days",
+    "category": "courses",
+    "flag": "-",
+    "description": "A 6-chapter course for new olim covering the first 90 days in Israel. The ordered week-one checklist, the absorption basket, health coverage, ulpan, and the rights you don't know to ask about."
+  },
+  {
+    "slug": "miluim-rights-and-money",
+    "category": "courses",
+    "flag": "-",
+    "description": "A 6-chapter course on Israeli reserve-duty (miluim) compensation, focused on the self-employed. How tagmul is calculated, the Tax Authority business grant, long-service grants, job protection, and how to claim."
+  },
+  {
+    "slug": "monday-com-workflows",
+    "category": "communication",
+    "flag": "-",
+    "description": "Optimize Monday.com workflows for Israeli teams with board management, automation recipes, and API integration. Use when user asks about Monday.com boards, Monday.com automations, \"monday.com API\", work management, sprint planning with Israeli calendar, or team workflow optimization on Monday.com. Enhances the official mondaycom/mcp server with Israeli team practice: Sunday-Thursday work week, Hebrew content on boards whose interface has no Hebrew option, plan and automation quota ceilings, and holiday-aware scheduling. Do NOT use for other project management tools (Jira, Asana, etc.)."
+  },
+  {
+    "slug": "n8n-hebrew-workflows",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Build n8n 2.x automation workflows (stable 2.38) with Israeli API integrations including Morning (Green Invoice), EZCount, israeli-bank-scrapers, data.gov.il, SMS gateways, Cardcom v11, Tranzila v2, Grow by Meshulam. Use when user asks to \"create n8n workflow for Israeli business\", \"connect Morning to n8n\", \"automate hashbonit\", \"Shabbat-aware schedule trigger\", \"n8n AI agent\", or integrate Israeli payment gateways. Covers Hebrew data handling, NIS formatting, Hebcal scheduling, n8n 2.x security patches (CVE-2026-44789 chain), AI Agent nodes with LangChain + RAG, MCP Client Tool and MCP Server Trigger, Israel Invoice Reform 2026 (allocation numbers, 5,000 NIS threshold from June 2026). Do NOT use for invoice management outside an n8n workflow (use green-invoice-il), general n8n tutorials without Israeli context, or Hebrew NLP (use hebrew-nlp-toolkit)."
+  },
+  {
+    "slug": "open-slide-best-practices",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Best practices for authoring presentations with open-slide, the React slide framework with a fixed 1920×1080 canvas, with full Hebrew and RTL support. Covers the slides/[id]/index.tsx file contract, type scale, DesignSystem tokens, themes/ system, @slide-comment inspector markers, current.json deictic resolution, Hebrew Google Fonts (Heebo, Rubik, Assistant, Noto Sans Hebrew), CSS logical properties, bidirectional Hebrew+English text with the bdi element, and Hebrew-aware type scale tuning. Use when authoring or editing slides under slides/[id]/ in an open-slide project, or when building Hebrew or bilingual decks on the framework. Do NOT use for video creation (use remotion-best-practices or hyperframes-best-practices), or for generic Hebrew presentations outside open-slide (use presentation-generator)."
+  },
+  {
+    "slug": "pelecard-payment-gateway",
+    "category": "tax-and-finance",
+    "flag": "Si",
+    "description": "Integrate Pelecard payment processing into Israeli web and mobile apps -- covers the iframe payment flow on gateway21.pelecard.biz, ActionType selection (J2/J4/J5/J5h), tashlumim (installments), tokenization, ConfirmationKey server-side validation via PaymentGW/GetTransaction, refunds, 3D Secure 2, Bit wallet, and Apple Pay via ClientSecure.js. Use when user asks to accept payments via Pelecard, set up slikat ashrai with Pelecard, validate a Pelecard callback, charge a saved Pelecard token, or mentions Pelecard, gateway21, PelecardStatusCode, or ConfirmationKey. Do NOT use for Cardcom (use cardcom-payment-gateway), Tranzila (use tranzila-payment-gateway), Grow/Meshulam (use grow-payment-gateway), multi-gateway orchestration (use israeli-payment-orchestrator), or invoice generation (use green-invoice)."
+  },
+  {
+    "slug": "pikud-haoref-safety-protocols",
+    "category": "security-compliance",
+    "flag": "Sc",
+    "description": "Actionable safety protocols per Home Front Command alert type in Israel. Use when a user asks what to do during a specific type of emergency alert (missiles, hostile aircraft, earthquake, tsunami, hazardous materials, terrorist infiltration), needs regional response time guidance, wants safety instructions for special populations (elderly, disabled, children), or is a new immigrant learning Israeli emergency procedures. Provides step-by-step actions for each alert category, post-alert procedures, and when it is safe to leave the shelter. Helps users respond correctly during emergencies, which can be the difference between life and injury. Do NOT use for building alert API integrations (use pikud-haoref-alerts), for finding or preparing shelters (use israeli-shelter-guide), or for non-Israeli emergency response procedures."
+  },
+  {
+    "slug": "presentation-generator",
+    "category": "marketing-growth",
+    "flag": "Sc",
+    "description": "Generate RTL-first Hebrew presentations with full right-to-left support. Use when you need to create a business presentation, startup pitch deck, quarterly report, or educational slideshow in Hebrew. Produces slides with Hebrew fonts, right-aligned bullets, and bilingual support in a single deck. Prevents hours of manual formatting and RTL issues that other tools fail to solve. Do NOT use for non-Hebrew presentations, video creation, or interactive web slideshows."
+  },
+  {
+    "slug": "remotion-best-practices",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Best practices for Remotion video creation in React with Hebrew RTL support. Use when dealing with Remotion code, creating programmatic videos, building Hebrew video content with RTL captions and text animations, or generating social media videos with Hebrew fonts. Covers animations, compositions, sequencing, transitions, audio/video, captions, 3D, charts, voiceover, and Hebrew/RTL text rendering. Do NOT use for non-Remotion video editing, general React development, or static image generation."
+  },
+  {
+    "slug": "shabbat-aware-scheduler",
+    "category": "localization",
+    "flag": "Si",
+    "description": "Schedule meetings, deployments, and events respecting Shabbat, Israeli holidays (chagim), and Hebrew calendar constraints. Use when user asks to schedule around Shabbat, \"zmanim\", check Israeli holidays, plan around chagim, set Israeli business hours, or needs Hebrew calendar-aware scheduling logic. Includes halachic times (zmanim) via HebCal API, full Israeli holiday calendar, and Israeli business hour conventions. Do NOT use for religious halachic rulings (consult a rabbi) or diaspora 2-day holiday scheduling."
+  },
+  {
+    "slug": "shekel-currency-converter",
+    "category": "tax-and-finance",
+    "flag": "Si",
+    "description": "Not tax advice and not a filed return. Convert currencies to/from Israeli New Shekel (NIS/ILS) using Bank of Israel official representative rates (shaar yatzig). Use when user asks to convert shekels, NIS, ILS, asks about exchange rates, \"shaar yatzig\" (representative rate), or needs currency conversion for Israeli tax or business purposes, including which date's rate applies to foreign-currency income, to VAT on a payment from a foreign client, or as the customs rate for import VAT. Covers the official Bank of Israel published currencies (14 currencies) with current and historical (tax-date) rates. Do NOT use for cryptocurrency or unofficial money exchange rates."
+  },
+  {
+    "slug": "skills-il-skill-creator",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Interactive workflow for creating new skills for the skills-il organization. Guides through category selection, use case definition, folder scaffolding, metadata.json generation with bilingual metadata, instruction writing, Hebrew companion creation, and validation. Use when user asks to create a new skill, scaffold a skill for skills-il, write a SKILL.md, contribute a skill, new skill template, or liztor skill chadash. Enforces skills-il conventions (kebab-case naming, Hebrew transliterations, bilingual display names, progressive disclosure, validate-skill.sh compliance). Do NOT use for editing existing skills, creating skills for non-skills-il platforms, or generic markdown file creation."
+  },
+  {
+    "slug": "tase-stock-analysis",
+    "category": "tax-and-finance",
+    "flag": "Sx",
+    "description": "Analyze Israeli stocks on TASE (Tel Aviv Stock Exchange), track TA-35 and TA-125 indices, and evaluate dual-listed companies (TASE + NASDAQ). Use when user asks about Israeli stocks, \"boorsa\", \"TA-35\", \"TASE\", Maya filings, dual-listed companies, or Israeli capital gains tax on securities. Provides index composition, Maya (TASE disclosure) filings lookup, capital gains tax calculations (25% on securities), and Bank of Israel interest rate context for valuation. Do NOT use for general international stock analysis unrelated to Israel, or for cryptocurrency trading."
+  },
+  {
+    "slug": "telegram-bot-builder",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Build Telegram bots with grammY, Telegraf, or python-telegram-bot. Covers Bot API v10.3 webhooks vs polling, inline keyboards, commands, middleware patterns, Telegram Stars + Gifts payments, Mini Apps 2.0, Bot Business mode, and Hebrew message handling. Use when building a Telegram bot, setting up webhooks, handling Hebrew/RTL messages in a bot, or integrating Telegram payments. Do NOT use for WhatsApp bots (use israeli-whatsapp-business), voice bots (use hebrew-voice-bot-builder), or general chatbot design patterns (use hebrew-chatbot-builder)."
+  },
+  {
+    "slug": "tranzila-payment-gateway",
+    "category": "tax-and-finance",
+    "flag": "Sx",
+    "description": "Integrate Tranzila payment processing into Israeli applications -- covers iframe payments, tokenization, installments (tashlumim), refunds, 3D Secure, and Bit wallet. Use when user asks to accept payments via Tranzila, integrate Israeli credit card processing, set up \"slikat ashrai\", handle tashlumim (installment payments), create payment tokens, process refunds through Tranzila, or mentions \"Tranzila\", \"tranzila API\", \"secure5\", or Israeli online payments. Supports both legacy CGI endpoints and modern API V2. Do NOT use for Cardcom integration (use cardcom-payment-gateway), general accounting, or non-payment financial queries."
+  },
+  {
+    "slug": "us-israel-dual-tax-navigator",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Not tax advice and not a filed return. Maps what a US-Israel dual citizen actually has to file in both systems for a tax year: the US 1040, FBAR (FinCEN 114), Form 8938, and how those line up against the Israeli calendar. Compares the Foreign Earned Income Exclusion against the Foreign Tax Credit, flags the revocation trap, and lays out the Streamlined Foreign Offshore route for someone who never filed after making aliyah. Use when a US citizen or green card holder in Israel asks what they owe the IRS, whether they need an FBAR, which years to catch up, or how to brief an accountant. Produces a filing-obligation map and a document checklist, never a completed or signed return. Do NOT use for Israeli-side filing, for classifying Israeli funds as PFICs, for self-employment tax, or for renouncing citizenship."
+  },
+  {
+    "slug": "us-person-israeli-investment-check",
+    "category": "tax-and-finance",
+    "flag": "Sc",
+    "description": "Not tax advice and not a filed return. Screens the Israeli savings and investment products a US person holds, keren hishtalmut, kupat gemel, pension, kranot neemanut, TASE ETFs, bituach menahalim, for two separate US exposures: whether the holding is a PFIC needing Form 8621, and whether it is a foreign trust needing Forms 3520 and 3520-A. Walks the actual statutory tests and the Revenue Procedure 2020-17 exemption criteria rather than guessing, and outputs a per-product table saying which test each product passes or fails and what to ask a preparer. Use when a US citizen or green card holder in Israel asks whether their keren hishtalmut, pension, kupat gemel or Israeli fund creates a US reporting problem, or is deciding what to buy. Do NOT use for annual filing mechanics or FBAR, for Israeli-side tax, for self-employment tax, or to obtain a final classification of any specific product."
+  },
+  {
+    "slug": "video-use-best-practices",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Best practices for using browser-use/video-use to edit Hebrew videos end-to-end with Claude Code. Covers the Hebrew-specific deltas to video-use's 12 Hard Rules: SUB_FORCE_STYLE override (Helvetica has no Hebrew glyphs), the python-bidi pre-shape recipe for libass+SRT BiDi failures on macOS, Hebrew filler-word post-pass on Scribe word timestamps, fontsdir= parameter for reliable font discovery, takes_packed.md handling for Hebrew with sofit/nikud/code-switching, and animation slot guidance that defers to hyperframes-best-practices and remotion-best-practices. Use when editing Hebrew talking-head video, podcast clips, tutorials, or marketing video with video-use. Do NOT use for non-Hebrew video-use sessions (read upstream SKILL.md directly), Hebrew podcast audio-only post-production (use hebrew-podcast-postproduction), or generic FFmpeg work without video-use orchestration."
+  },
+  {
+    "slug": "wcag-accessibility-widget",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Not legal advice. Build a self-hosted accessibility preferences widget for Israeli React or Next.js websites (high contrast, font size, keyboard focus highlighting, readable font, heading and link markers, stop animations) and the הצהרת נגישות statement page, framed correctly against the Israeli legal floor (ת\"י 5568 at level AA, based on WCAG 2.0). Use when building an accessibility widget or toolbar, adding the accessibility statement page, making the toggles work in RTL, or debugging position:fixed elements that break under CSS filter. The widget is a comfort tool and does not by itself make a site compliant. Do NOT use for third-party overlay services (UserWay, AccessiBe), non-Israeli WCAG audits, or exemption, enforcement and full-site compliance questions (use israeli-accessibility-compliance)."
+  },
+  {
+    "slug": "writing-your-first-agent-skill",
+    "category": "courses",
+    "flag": "-",
+    "description": "A 6-chapter course for developers on how to write an agent skill from scratch. Covers the SKILL.md format, frontmatter anatomy, references/ vs scripts/, sharing your skill, and the 10 most common authoring mistakes. The format is an open specification supported by Claude Code, the Claude apps, and other editors. Works for personal skills, team skills, or contributions to public catalogs."
+  },
+  {
+    "slug": "yad2-second-hand-trader",
+    "category": "developer-tools",
+    "flag": "Sc",
+    "description": "Buy and sell second-hand goods safely on Yad2 (Yad2 Market): writes optimized Hebrew listings with a comparable-based fair-price band, drafts buyer/seller negotiation messages, and runs a fraud red-flag checklist against suspicious buyers or sellers. Use when a private person asks to \"write a Yad2 listing\", \"sell my used X on Yad2\", \"is this Yad2 buyer a scam\", \"מוכר ביד2\", \"קונה ביד2\", or wants to negotiate a Yad2 price. Knows the current Israeli scam playbook (fake GLS shipping payments, forged bank-transfer screenshots, phishing \"Israel Post\" credit-card links, Bitcoin demands) and the safety rules (never pay in advance, meet and inspect, cash or known payment apps). Do NOT use for vehicle ownership or registration checks (use israeli-vehicle-manager), business multi-channel selling on Zap/KSP/Facebook (use israeli-marketplace-seller), rental apartment hunting (use israeli-apartment-hunting), or retailer price comparison (use israeli-product-price-comparator)."
+  },
+  {
+    "slug": "zapier-israeli-integrations",
+    "category": "developer-tools",
+    "flag": "-",
+    "description": "Build Zapier Zaps connecting Israeli business apps (Morning/Green Invoice, Cardcom, Tranzila, iCount, Grow, SUMIT, Priority, InforUMobile) with global services for billing, payment, and workflow automation. Use when asked to \"create a Zap for Israeli invoicing\", \"automate Morning receipts\", \"connect Cardcom to my CRM\", or set up payment notifications. Covers Hebrew text handling, ILS formatting, bimonthly VAT logic, Invoice Reform allocation numbers, Zapier AI (Copilot, Agents, MCP), and webhooks from Israeli processors. All amounts use decimal shekels, not agorot. Do NOT use for n8n (use n8n-hebrew-workflows), Make.com (use make-com-israeli-automations), or non-Zapier automation."
+  }
+]
